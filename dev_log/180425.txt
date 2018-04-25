@@ -1,0 +1,36 @@
+Spark Installation:
+1) spark moved to C:\spark
+2) set up path to C:\spark\bin
+- spark shell does not work yet, reason: https://stackoverflow.com/questions/49623801/exception-in-thread-main-java-lang-exceptionininitializererror-when-installing-s
+- need to downgrade JDK from 10 to 8
+- had JDK-8, tested -- shell works, but needs hadoop/winutils
+3) removed pyspark
+
+OpenCV:
+1) plugins.sbt:
+addSbtPlugin("org.bytedeco" % "sbt-javacv" % "1.16")
+2) build.sbt:
+libraryDependencies += "org.bytedeco" % "javacv-platform" % "1.4.1"
+
+Breeze Installation:
+1) build.sbt
+libraryDependencies  += "org.scalanlp" %% "breeze" % "0.13"
+libraryDependencies  += "org.scalanlp" %% "breeze-natives" % "0.13"
+resolvers += "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
+
+
+Discoveries:
++ SBT may have failed due to name of project (starting with digits)
++ Spark and other frameworks
+
+Discover:
+- Akka
+- Design patterns in Scala
+- GUI in Scala/Python
+
+Tasks done:
++ read Odersky & look through Joshi; Odersky is great, Joshi is simplistic
+
+Tasks:
+- Install javacv, breeze, spark
+- Simple SBT app for loading and saving picture (with javacv), -20.04, +28.04
