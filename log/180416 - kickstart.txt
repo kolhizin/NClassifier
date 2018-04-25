@@ -1,0 +1,36 @@
+Computer vision in Scala:
+1) OpenCV -> "javacv"
+2) Numerical Libraries -> "Breeze"
+3) Machine Learning -> "Spark MLlib"
+4) Check licensing!
+
+- "ScalaNLP" is umbrella for "Breeze" and "Epic"
+- "Algebird" is abstract algebra (total brainfuck)
+"Apache Common Math" vs "Breeze":
+1) Spark MLlib uses Breeze
+2) Apache Common Math actual version is from 2016 (as of Apr'18)
+3) Breeze syntax is swe-e-et!
+
+To read:
+- Howse J., Joshi P., Beyeler M. - OpenCV Computer Vision Projects with Python - 2016 [for OpenCV]
+- Odersky M., Spoon L., Venners B. - Programming in Scala, Second Edition - 2010 [for Scala]
+
+Subprojects:
+- image labeler (oriented boxes)
+- interactive trainer
+- training classes
+  - Haar features
+  - HOG features
+  - SIFT / SURF / etc. features
+  - TensorFlow models (like MobileNet, Inception, FaceNet and others)
+- training pipeline
+
+Discover:
+- Akka
+- Spark
+- Design patterns in Scala
+- GUI in Scala/Python
+
+Tasks:
+- Read diagonally Odersky & Joshi, 20.04
+- Simple SBT app for loading and saving picture (with javacv), 20.04
