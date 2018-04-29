@@ -1,0 +1,29 @@
+IntelliJ IDEA by unknown reason sometimes creates SBT with scala-version=2.12.4 instead of 2.12.5 which
+causes "class not found" error
+
+Once imported library dependencies and sbt plugin can be used offline
+
+Scala.Swing is no longer support. Need to use either java swing or scalafx. Chose latter.
+
+Simple App:
+1) plugins.sbt:
+addSbtPlugin("org.bytedeco" % "sbt-javacv" % "1.16")
+2) build.sbt:
+libraryDependencies += "org.bytedeco" % "javacv-platform" % "1.4.1"
+libraryDependencies += "org.scalanlp" %% "breeze" % "0.13"
+libraryDependencies += "org.scalanlp" %% "breeze-natives" % "0.13"
+libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.144-R12"
+resolvers += "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
+
+Discover:
+- Akka
+- Design patterns in Scala
+- GUI in Scala/Python
+
+Tasks done:
++ install javacv, breeze
++ won't install spark
++ simple sbt app for loading and showing picture
+
+Tasks:
+- Simple GUI app for viewing pictures in directory

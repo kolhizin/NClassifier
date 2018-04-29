@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="t03_sbt_gui-build"
+		revision="0.1.0-SNAPSHOT"
+		extra-scalaVersion="2.12"
+		extra-sbtVersion="1.0"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180426195325"/>
+	<dependencies>
+		<module organisation="org.bytedeco" name="sbt-javacv">
+			<revision name="1.16" status="release" pubdate="20180202055758" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/bytedeco/sbt-javacv" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3420" time="0" location="C:\Users\KolhiziN\.ivy2\cache\scala_2.12\sbt_1.0\org.bytedeco\sbt-javacv\ivy-1.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/sbt-javacv_2.12_1.0/1.16/sbt-javacv-1.16.pom"/>
+				<caller organisation="default" name="t03_sbt_gui-build" conf="test, compile, runtime" rev="1.16" rev-constraint-default="1.16" rev-constraint-dynamic="1.16" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-javacv" type="jar" ext="jar" status="no" details="" size="8116" time="0" location="C:\Users\KolhiziN\.ivy2\cache\scala_2.12\sbt_1.0\org.bytedeco\sbt-javacv\jars\sbt-javacv-1.16.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/sbt-javacv_2.12_1.0/1.16/sbt-javacv-1.16.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco" name="sbt-javacpp">
+			<revision name="1.13" status="release" pubdate="20180202054150" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/bytedeco/sbt-javacpp" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3117" time="0" location="C:\Users\KolhiziN\.ivy2\cache\scala_2.12\sbt_1.0\org.bytedeco\sbt-javacpp\ivy-1.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/sbt-javacpp_2.12_1.0/1.13/sbt-javacpp-1.13.pom"/>
+				<caller organisation="org.bytedeco" name="sbt-javacv" conf="default, compile, runtime, master" rev="1.13" rev-constraint-default="1.13" rev-constraint-dynamic="1.13" callerrev="1.16" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-javacpp" type="jar" ext="jar" status="no" details="" size="11152" time="0" location="C:\Users\KolhiziN\.ivy2\cache\scala_2.12\sbt_1.0\org.bytedeco\sbt-javacpp\jars\sbt-javacpp-1.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/sbt-javacpp_2.12_1.0/1.13/sbt-javacpp-1.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco" name="javacpp">
+			<revision name="1.4" status="release" pubdate="20180115120839" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://bytedeco.org/javacpp/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="no" details="" size="4058" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacpp\ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp/1.4/javacpp-1.4.pom"/>
+				<caller organisation="org.bytedeco" name="sbt-javacpp" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.13"/>
+				<artifacts>
+					<artifact name="javacpp" type="jar" ext="jar" status="no" details="" size="341717" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacpp\jars\javacpp-1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp/1.4/javacpp-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
