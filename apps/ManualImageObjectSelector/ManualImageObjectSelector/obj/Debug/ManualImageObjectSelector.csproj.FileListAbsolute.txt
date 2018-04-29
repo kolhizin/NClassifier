@@ -7,3 +7,4 @@ D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelec
 D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.csproj.GenerateResource.Cache
 D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.exe
 D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.pdb
+D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.OrientedRect.resources
