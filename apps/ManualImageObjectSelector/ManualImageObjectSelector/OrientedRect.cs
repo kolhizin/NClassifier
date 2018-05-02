@@ -77,5 +77,29 @@ namespace ManualImageObjectSelector
                 e.Graphics.DrawLine(pen, pts[i], pts[j]);
             }
         }
+
+        public float getAngle()
+        {
+            return (float)(Math.Atan2(dir.X, dir.Y) * 180.0 / Math.PI);
+        }
+
+        public Bitmap transformBitmap(Bitmap src, int width, int height)
+        {
+            Bitmap res = new Bitmap(width, height);
+            for(int y = 0; y < height; y++)
+                for(int x = 0; x < width; x++)
+                {
+                    float sy = -(((float)y / height) * 2.0f - 1.0f);
+                    float sx = ((float)x / width) * 2.0f - 1.0f;
+                    PointF p = getPoint(sx, sy);
+                    float rx = Math.Max(0.0f, Math.Min(1.0f, (p.X * 0.5f + 0.5f)));
+                    float ry = Math.Max(0.0f, Math.Min(1.0f, (-p.Y * 0.5f + 0.5f)));
+                    
+                    int tx = Math.Min((int)Math.Round(rx * src.Width), src.Width - 1);
+                    int ty = Math.Min((int)Math.Round(ry * src.Height), src.Height - 1);
+                    res.SetPixel(x, y, src.GetPixel(tx, ty));
+                }
+            return res;
+        }
     }
 }

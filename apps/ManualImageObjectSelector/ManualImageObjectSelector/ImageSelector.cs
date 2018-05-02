@@ -260,7 +260,13 @@ namespace ManualImageObjectSelector
 
         private void pbMain_MouseUp(object sender, MouseEventArgs e)
         {
-            selectionModeOrientation = false;
+            if (selectionModeOrientation)
+                selectionModeOrientation = false;
+            else
+            {
+                ConfirmRegionDialog crd = new ConfirmRegionDialog(pbMain.Image, rect);
+                DialogResult res = crd.ShowDialog();
+            }
         }
     }
 }

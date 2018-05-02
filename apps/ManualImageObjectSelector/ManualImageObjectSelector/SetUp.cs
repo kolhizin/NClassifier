@@ -80,6 +80,7 @@ namespace ManualImageObjectSelector
             SaveFileDialog sfd = new SaveFileDialog();
             if(Directory.Exists(lblFolder.Text))
                 sfd.InitialDirectory = lblFolder.Text;
+            sfd.Filter = "JSON files (.json)|*.json";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 lblOutputFile.Text = sfd.FileName;
