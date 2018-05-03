@@ -18,7 +18,7 @@ namespace ManualImageObjectSelector
         private PointF cur_direction;
         private OrientedRect cur_rect = null; //current rect
         private ImageRegionInfo cur_regions = null; //current regions
-        private LinkedList<ImageRegionInfo> result = null;
+        private Dictionary<string, ImageRegionInfo> result = null;
 
         private bool selectionModeOrientation = false; //true -- classic region selection, false -- orientation selection
 
@@ -132,27 +132,39 @@ namespace ManualImageObjectSelector
             cur_regions.remove(idx);
             updateCurRegionInfoViews();
         }
-        private void loadOrCreateImageRegion(string fname, bool hintIsNext = false)
+        private bool saveCurRegionInfo()
+        {
+            if (cur_regions == null)
+                return true;
+            string imgName = cur_regions.imgName;
+            if (string.IsNullOrEmpty(imgName))
+                return true;
+            if (result.ContainsKey(imgName))
+                result[imgName] = cur_regions;
+            else
+                result.Add(imgName, cur_regions);
+            return true;
+        }
+        private void loadOrCreateImageRegion(string fname)
         {
             if (string.IsNullOrEmpty(fname))
                 cur_regions = null;
             else
             {
                 string imgName = System.IO.Path.GetFileName(fname);
-                if(hintIsNext)
-                    if((!result.Any()) || (result.Last.Value.imgName == cur_regions.imgName))
-                    {
-                        resetCurRegionInfo(imgName);
-                        return;
-                    }
-                foreach(ImageRegionInfo info in result)
-                    if(info.imgName == imgName)
-                    {
-                        resetCurRegionInfo(info);
-                        return;
-                    }
-                resetCurRegionInfo(imgName);
+                if(result.ContainsKey(imgName))
+                    resetCurRegionInfo(result[imgName]);
+                else
+                    resetCurRegionInfo(imgName);
             }
+        }
+        private void saveResult()
+        {
+
+        }
+        private void loadResult()
+        {
+
         }
         private void setMainImage(int idx)
         {
@@ -192,7 +204,7 @@ namespace ManualImageObjectSelector
                     pbMain.Image = pBoxes[0].Image;
                 else
                     pbMain.Image = Image.FromFile(in_fnames[cur_index]);
-                loadOrCreateImageRegion(in_fnames[cur_index], true);
+                loadOrCreateImageRegion(in_fnames[cur_index]);
             }
             for (int i = 0; i < pBoxes.Length - 1; i++)
                 pBoxes[i].Image = pBoxes[i + 1].Image;
@@ -206,9 +218,10 @@ namespace ManualImageObjectSelector
         {
             this.in_fnames = in_fnames;
             this.out_fname = out_fname;
-            this.result = new LinkedList<ImageRegionInfo>();
+            this.result = new Dictionary<string, ImageRegionInfo>();
             InitializeComponent();
             recreatePreviews();
+            loadResult();
             setMainImage(0);
             cur_direction = new PointF(0.0f, 1.0f);
         }
@@ -225,9 +238,23 @@ namespace ManualImageObjectSelector
         private void ImageSelector_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Right)
-                setMainImageNext();
+            {
+                if (saveCurRegionInfo())
+                {
+                    if (chkAutosaveNext.Checked)
+                        saveResult();
+                    setMainImageNext();
+                }
+            }
             if (e.KeyCode == Keys.Left)
-                setMainImage(cur_index - 1);
+            {
+                if (saveCurRegionInfo())
+                {
+                    if (chkAutosaveNext.Checked)
+                        saveResult();
+                    setMainImage(cur_index - 1);
+                }
+            }
             if (e.KeyCode == Keys.W)
                 updateCurrentOrientation(0.0f, 1.0f);
             if (e.KeyCode == Keys.S || e.KeyCode == Keys.X)
@@ -400,6 +427,34 @@ namespace ManualImageObjectSelector
                 return;
             string imgname = cur_regions.imgName;
             resetCurRegionInfo(imgname);
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            if (lstRegions.SelectedItem == null)
+            {
+                MessageBox.Show("Region id is not specified!", "Note");
+                return;
+            }
+            int idx = (int)lstRegions.SelectedItem - 1;
+            if (idx >= cur_regions.regions.Count)
+            {
+                MessageBox.Show("Specified region id is out of bounds!", "Error!");
+                return;
+            }
+            ConfirmRegionDialog crd = new ConfirmRegionDialog(pbMain.Image, cur_regions.regions.ElementAt(idx));
+            crd.ShowDialog();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            saveResult();
+        }
+
+        private void ImageSelector_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (chkAutosaveExit.Checked)
+                saveResult();
         }
     }
 }

@@ -33,13 +33,15 @@
             this.pbMain = new System.Windows.Forms.PictureBox();
             this.pbOrientation = new System.Windows.Forms.PictureBox();
             this.pnlInfo = new System.Windows.Forms.Panel();
-            this.grpCheckBox = new System.Windows.Forms.GroupBox();
-            this.chkSelection = new System.Windows.Forms.CheckBox();
-            this.chkRegion = new System.Windows.Forms.CheckBox();
-            this.chkAutosaveExit = new System.Windows.Forms.CheckBox();
-            this.lstRegions = new System.Windows.Forms.ComboBox();
-            this.btnRemove = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.lstRegions = new System.Windows.Forms.ComboBox();
+            this.grpCheckBox = new System.Windows.Forms.GroupBox();
+            this.chkAutosaveExit = new System.Windows.Forms.CheckBox();
+            this.chkRegion = new System.Windows.Forms.CheckBox();
+            this.btnView = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.chkAutosaveNext = new System.Windows.Forms.CheckBox();
             this.lpanRoot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOrientation)).BeginInit();
@@ -105,6 +107,8 @@
             // 
             // pnlInfo
             // 
+            this.pnlInfo.Controls.Add(this.btnSave);
+            this.pnlInfo.Controls.Add(this.btnView);
             this.pnlInfo.Controls.Add(this.btnClear);
             this.pnlInfo.Controls.Add(this.btnRemove);
             this.pnlInfo.Controls.Add(this.lstRegions);
@@ -115,29 +119,62 @@
             this.pnlInfo.Size = new System.Drawing.Size(441, 148);
             this.pnlInfo.TabIndex = 3;
             // 
+            // btnClear
+            // 
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClear.Location = new System.Drawing.Point(160, 107);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(94, 36);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Clear All";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRemove.Location = new System.Drawing.Point(160, 73);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(94, 31);
+            this.btnRemove.TabIndex = 2;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
+            // lstRegions
+            // 
+            this.lstRegions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstRegions.FormattingEnabled = true;
+            this.lstRegions.Location = new System.Drawing.Point(160, 8);
+            this.lstRegions.Name = "lstRegions";
+            this.lstRegions.Size = new System.Drawing.Size(94, 28);
+            this.lstRegions.TabIndex = 1;
+            // 
             // grpCheckBox
             // 
             this.grpCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpCheckBox.Controls.Add(this.chkAutosaveNext);
             this.grpCheckBox.Controls.Add(this.chkAutosaveExit);
-            this.grpCheckBox.Controls.Add(this.chkSelection);
             this.grpCheckBox.Controls.Add(this.chkRegion);
             this.grpCheckBox.Location = new System.Drawing.Point(261, 8);
             this.grpCheckBox.Name = "grpCheckBox";
             this.grpCheckBox.Size = new System.Drawing.Size(177, 137);
             this.grpCheckBox.TabIndex = 0;
             this.grpCheckBox.TabStop = false;
-            this.grpCheckBox.Text = "Dialog control";
+            this.grpCheckBox.Text = "Behavior";
             // 
-            // chkSelection
+            // chkAutosaveExit
             // 
-            this.chkSelection.AutoSize = true;
-            this.chkSelection.Location = new System.Drawing.Point(8, 59);
-            this.chkSelection.Name = "chkSelection";
-            this.chkSelection.Size = new System.Drawing.Size(166, 24);
-            this.chkSelection.TabIndex = 1;
-            this.chkSelection.Text = "Confirm selection?";
-            this.chkSelection.UseVisualStyleBackColor = true;
+            this.chkAutosaveExit.AutoSize = true;
+            this.chkAutosaveExit.Checked = true;
+            this.chkAutosaveExit.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAutosaveExit.Location = new System.Drawing.Point(8, 66);
+            this.chkAutosaveExit.Name = "chkAutosaveExit";
+            this.chkAutosaveExit.Size = new System.Drawing.Size(161, 24);
+            this.chkAutosaveExit.TabIndex = 2;
+            this.chkAutosaveExit.Text = "Autosave on exit?";
+            this.chkAutosaveExit.UseVisualStyleBackColor = true;
             // 
             // chkRegion
             // 
@@ -149,48 +186,37 @@
             this.chkRegion.Text = "Confirm region?";
             this.chkRegion.UseVisualStyleBackColor = true;
             // 
-            // chkAutosaveExit
+            // btnView
             // 
-            this.chkAutosaveExit.AutoSize = true;
-            this.chkAutosaveExit.Checked = true;
-            this.chkAutosaveExit.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkAutosaveExit.Location = new System.Drawing.Point(8, 84);
-            this.chkAutosaveExit.Name = "chkAutosaveExit";
-            this.chkAutosaveExit.Size = new System.Drawing.Size(161, 24);
-            this.chkAutosaveExit.TabIndex = 2;
-            this.chkAutosaveExit.Text = "Autosave on exit?";
-            this.chkAutosaveExit.UseVisualStyleBackColor = true;
+            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnView.Location = new System.Drawing.Point(160, 39);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(94, 31);
+            this.btnView.TabIndex = 4;
+            this.btnView.Text = "View";
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
-            // lstRegions
+            // btnSave
             // 
-            this.lstRegions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstRegions.FormattingEnabled = true;
-            this.lstRegions.Location = new System.Drawing.Point(160, 8);
-            this.lstRegions.Name = "lstRegions";
-            this.lstRegions.Size = new System.Drawing.Size(95, 28);
-            this.lstRegions.TabIndex = 1;
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSave.Location = new System.Drawing.Point(8, 107);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(146, 36);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnRemove
+            // chkAutosaveNext
             // 
-            this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemove.Location = new System.Drawing.Point(160, 42);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(94, 56);
-            this.btnRemove.TabIndex = 2;
-            this.btnRemove.Text = "Remove Selected";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
-            // 
-            // btnClear
-            // 
-            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.Location = new System.Drawing.Point(160, 106);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(94, 36);
-            this.btnClear.TabIndex = 3;
-            this.btnClear.Text = "Clear All";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.chkAutosaveNext.AutoSize = true;
+            this.chkAutosaveNext.Location = new System.Drawing.Point(8, 101);
+            this.chkAutosaveNext.Name = "chkAutosaveNext";
+            this.chkAutosaveNext.Size = new System.Drawing.Size(167, 24);
+            this.chkAutosaveNext.TabIndex = 3;
+            this.chkAutosaveNext.Text = "Autosave on next?";
+            this.chkAutosaveNext.UseVisualStyleBackColor = true;
             // 
             // ImageSelector
             // 
@@ -202,6 +228,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ImageSelector";
             this.Text = "Image viewer";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ImageSelector_FormClosed);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ImageSelector_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ImageSelector_KeyPress);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.ImageSelector_PreviewKeyDown);
@@ -223,11 +250,13 @@
         private System.Windows.Forms.PictureBox pbOrientation;
         private System.Windows.Forms.Panel pnlInfo;
         private System.Windows.Forms.GroupBox grpCheckBox;
-        private System.Windows.Forms.CheckBox chkSelection;
         private System.Windows.Forms.CheckBox chkRegion;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.ComboBox lstRegions;
         private System.Windows.Forms.CheckBox chkAutosaveExit;
+        private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.CheckBox chkAutosaveNext;
     }
 }
