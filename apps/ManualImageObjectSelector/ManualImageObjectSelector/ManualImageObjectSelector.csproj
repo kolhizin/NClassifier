@@ -51,6 +51,7 @@
     <Compile Include="ConfirmRegionDialog.Designer.cs">
       <DependentUpon>ConfirmRegionDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageRegionInfo.cs" />
     <Compile Include="OrientedRect.cs" />
     <Compile Include="ImageSelector.cs">
       <SubType>Form</SubType>

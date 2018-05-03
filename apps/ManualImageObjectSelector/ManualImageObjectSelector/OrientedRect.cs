@@ -46,22 +46,19 @@ namespace ManualImageObjectSelector
             //ry = cy - x * dx + y * dy
             return new PointF(center.X + w * x * dir.Y + h * y * dir.X, center.Y - w * x * dir.X + h * y * dir.Y);
         }
+        public PointF getAbsPoint(float x, float y, float xCoef, float yCoef, float xOff, float yOff)
+        {
+            PointF tmp = this.getPoint(x, y);
+            return new PointF(xOff + tmp.X * xCoef, yOff + tmp.Y * yCoef);
+        }
         public PointF[] getAbsPoints(float xCoef, float yCoef, float xOff, float yOff)
         {
             PointF[] res = new PointF[4];
 
-            PointF tmp = this.getPoint(-1.0f, -1.0f);
-            res[0] = new PointF(xOff + tmp.X * xCoef, yOff + tmp.Y * yCoef);
-
-            tmp = this.getPoint(1.0f, -1.0f);
-            res[1] = new PointF(xOff + tmp.X * xCoef, yOff + tmp.Y * yCoef);
-
-            tmp = this.getPoint(1.0f, 1.0f);
-            res[2] = new PointF(xOff + tmp.X * xCoef, yOff + tmp.Y * yCoef);
-
-            tmp = this.getPoint(-1.0f, 1.0f);
-            res[3] = new PointF(xOff + tmp.X * xCoef, yOff + tmp.Y * yCoef);
-
+            res[0] = this.getAbsPoint(-1.0f, -1.0f, xCoef, yCoef, xOff, yOff);
+            res[1] = this.getAbsPoint(1.0f, -1.0f, xCoef, yCoef, xOff, yOff);
+            res[2] = this.getAbsPoint(1.0f, 1.0f, xCoef, yCoef, xOff, yOff);
+            res[3] = this.getAbsPoint(-1.0f, 1.0f, xCoef, yCoef, xOff, yOff);
             return res;
         }
 
