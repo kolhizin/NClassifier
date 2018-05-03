@@ -9,3 +9,5 @@ D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelec
 D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.pdb
 D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.ImageSelector.resources
 D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.ConfirmRegionDialog.resources
+D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\bin\Debug\Newtonsoft.Json.dll
+D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\bin\Debug\Newtonsoft.Json.xml

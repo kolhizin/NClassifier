@@ -160,11 +160,13 @@ namespace ManualImageObjectSelector
         }
         private void saveResult()
         {
-
+            string res = Newtonsoft.Json.JsonConvert.SerializeObject(result);
+            System.IO.File.WriteAllText(out_fname, res);
         }
         private void loadResult()
         {
-
+            string res = System.IO.File.ReadAllText(out_fname);
+            result = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, ImageRegionInfo>>(res);
         }
         private void setMainImage(int idx)
         {

@@ -11,6 +11,13 @@ namespace ManualImageObjectSelector
 {
     public class OrientedRect
     {
+        public OrientedRect()
+        {
+            w = 1.0f;
+            h = 1.0f;
+            this.center = new PointF(0.0f, 0.0f);
+            this.dir = new PointF(0.0f, 1.0f);
+        }
         public OrientedRect(PointF center, PointF direction, float w, float h)
         {
             this.center = center;
