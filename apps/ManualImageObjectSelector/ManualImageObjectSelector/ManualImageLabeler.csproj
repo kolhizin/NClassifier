@@ -49,11 +49,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassifierResult.cs" />
+    <Compile Include="ClassifierSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassifierSetup.Designer.cs">
+      <DependentUpon>ClassifierSetup.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfirmRegionDialog.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConfirmRegionDialog.Designer.cs">
       <DependentUpon>ConfirmRegionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageClassifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageClassifier.Designer.cs">
+      <DependentUpon>ImageClassifier.cs</DependentUpon>
     </Compile>
     <Compile Include="ImageRegionInfo.cs" />
     <Compile Include="OrientedRect.cs" />
@@ -71,8 +84,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClassifierSetup.resx">
+      <DependentUpon>ClassifierSetup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmRegionDialog.resx">
       <DependentUpon>ConfirmRegionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageClassifier.resx">
+      <DependentUpon>ImageClassifier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImageSelector.resx">
       <DependentUpon>ImageSelector.cs</DependentUpon>

@@ -105,5 +105,25 @@ namespace ManualImageObjectSelector
             f.FormClosed += (s, agrs) => this.Close();
             f.Show();
         }
+
+        private void btnClassifier_Click(object sender, EventArgs e)
+        {
+            /*
+            if (in_fnames == null)
+            {
+                MessageBox.Show("No input files selected (due to issues)!");
+                return;
+            }
+            if (out_fname == null)
+            {
+                MessageBox.Show("No output file specified!");
+                return;
+            }
+            */
+            this.Hide();
+            var f = new ClassifierSetup(in_fnames, out_fname);
+            f.FormClosed += (s, agrs) => this.Close();
+            f.Show();
+        }
     }
 }

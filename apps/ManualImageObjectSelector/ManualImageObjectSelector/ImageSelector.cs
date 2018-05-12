@@ -26,79 +26,12 @@ namespace ManualImageObjectSelector
         private Point selectPoint2;
 
         
-        private PictureBox[] pBoxes = null;
         private void updateCurrentOrientation(float dx, float dy)
         {
             float l2 = dx * dx + dy * dy;
             float il = 1.0f / (float)Math.Sqrt(l2);
             cur_direction = new PointF(dx * il, dy * il);
             pbOrientation.Invalidate();
-        }
-        private void recreatePreviews()
-        {
-            int w = pnlImageList.Width;
-            int h = pnlImageList.Height;
-            int n = h / w;
-            if (w > h)
-                n = 1;
-            if(pBoxes != null)
-            {
-                if (pBoxes.Length != n)
-                {
-                    foreach (PictureBox p in pBoxes)
-                    {
-                        pnlImageList.Controls.Remove(p);
-                        p.Dispose();
-                    }
-                    pBoxes = null;
-                }
-                else
-                {
-                    resizePreviews();
-                    return;
-                }
-            }
-            pBoxes = new PictureBox[n];
-            for (int i = 0; i < n; i++)
-            {
-                pBoxes[i] = new PictureBox();
-                pnlImageList.Controls.Add(pBoxes[i]);
-                pBoxes[i].Parent = pnlImageList;
-                pBoxes[i].SizeMode = PictureBoxSizeMode.Zoom;
-                pBoxes[i].Enabled = true;
-                pBoxes[i].Visible = true;
-                pBoxes[i].Show();
-            }
-            resizePreviews();
-            updateNewPreviews();
-        }
-        private void resizePreviews()
-        {
-            int w = pnlImageList.Width;
-            int h = pnlImageList.Height;
-            int dh = (h - pBoxes.Length * w) / pBoxes.Length;
-            int dh0 = dh / 2;
-            int dh1 = dh - dh0;
-
-            int cur_y = 0;
-            for(int i = 0; i < pBoxes.Length; i++)
-            {
-                cur_y += dh0;
-                pBoxes[i].Location = new System.Drawing.Point(0, cur_y);
-                cur_y += w + dh1;
-                pBoxes[i].Width = w;
-                pBoxes[i].Height = w;
-            }
-        }
-
-        private void updateNewPreviews()
-        {
-            for(int i = 0; i < pBoxes.Length; i++)
-            {
-                int idx = cur_index + i + 1;
-                if (idx < in_fnames.Length && pBoxes[i].Image == null)
-                    pBoxes[i].Image = Image.FromFile(in_fnames[idx]);
-            }
         }
         private void updateCurRegionInfoViews()
         {
@@ -182,14 +115,6 @@ namespace ManualImageObjectSelector
                 pbMain.Image = Image.FromFile(in_fnames[cur_index]);
                 loadOrCreateImageRegion(in_fnames[cur_index]);
             }
-            for(int i = 0; i < pBoxes.Length; i++)
-            {
-                int pidx = cur_index + i + 1;
-                if (pidx < in_fnames.Length)
-                    pBoxes[i].Image = Image.FromFile(in_fnames[pidx]);
-                else
-                    pBoxes[i].Image = null;
-            }
         }
         private void setMainImageNext()
         {
@@ -202,18 +127,9 @@ namespace ManualImageObjectSelector
             pbMain.Image = null;
             if (cur_index < in_fnames.Length)
             {
-                if (pBoxes.Length > 0)
-                    pbMain.Image = pBoxes[0].Image;
-                else
-                    pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+                pbMain.Image = Image.FromFile(in_fnames[cur_index]);
                 loadOrCreateImageRegion(in_fnames[cur_index]);
             }
-            for (int i = 0; i < pBoxes.Length - 1; i++)
-                pBoxes[i].Image = pBoxes[i + 1].Image;
-            if (cur_index + pBoxes.Length < in_fnames.Length)
-                pBoxes.Last().Image = Image.FromFile(in_fnames[cur_index + pBoxes.Length]);
-            else
-                pBoxes.Last().Image = null;
         }
 
         public ImageSelector(string [] in_fnames, string out_fname)
@@ -222,7 +138,6 @@ namespace ManualImageObjectSelector
             this.out_fname = out_fname;
             this.result = new Dictionary<string, ImageRegionInfo>();
             InitializeComponent();
-            recreatePreviews();
             loadResult();
             setMainImage(0);
             cur_direction = new PointF(0.0f, 1.0f);
@@ -230,7 +145,6 @@ namespace ManualImageObjectSelector
 
         private void pnlImageList_SizeChanged(object sender, EventArgs e)
         {
-            recreatePreviews();
         }
 
         private void ImageSelector_KeyPress(object sender, KeyPressEventArgs e)

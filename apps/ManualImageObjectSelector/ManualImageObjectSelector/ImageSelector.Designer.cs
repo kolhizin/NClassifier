@@ -29,19 +29,18 @@
         private void InitializeComponent()
         {
             this.lpanRoot = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlImageList = new System.Windows.Forms.Panel();
             this.pbMain = new System.Windows.Forms.PictureBox();
             this.pbOrientation = new System.Windows.Forms.PictureBox();
             this.pnlInfo = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnView = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.lstRegions = new System.Windows.Forms.ComboBox();
             this.grpCheckBox = new System.Windows.Forms.GroupBox();
+            this.chkAutosaveNext = new System.Windows.Forms.CheckBox();
             this.chkAutosaveExit = new System.Windows.Forms.CheckBox();
             this.chkRegion = new System.Windows.Forms.CheckBox();
-            this.btnView = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.chkAutosaveNext = new System.Windows.Forms.CheckBox();
             this.lpanRoot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOrientation)).BeginInit();
@@ -55,7 +54,6 @@
             this.lpanRoot.ColumnCount = 2;
             this.lpanRoot.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.lpanRoot.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.lpanRoot.Controls.Add(this.pnlImageList, 1, 1);
             this.lpanRoot.Controls.Add(this.pbMain, 0, 1);
             this.lpanRoot.Controls.Add(this.pbOrientation, 1, 0);
             this.lpanRoot.Controls.Add(this.pnlInfo, 0, 0);
@@ -69,24 +67,14 @@
             this.lpanRoot.Size = new System.Drawing.Size(600, 532);
             this.lpanRoot.TabIndex = 0;
             // 
-            // pnlImageList
-            // 
-            this.pnlImageList.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pnlImageList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlImageList.Location = new System.Drawing.Point(453, 161);
-            this.pnlImageList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnlImageList.Name = "pnlImageList";
-            this.pnlImageList.Size = new System.Drawing.Size(142, 365);
-            this.pnlImageList.TabIndex = 0;
-            this.pnlImageList.SizeChanged += new System.EventHandler(this.pnlImageList_SizeChanged);
-            // 
             // pbMain
             // 
+            this.lpanRoot.SetColumnSpan(this.pbMain, 2);
             this.pbMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbMain.Location = new System.Drawing.Point(5, 161);
             this.pbMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbMain.Name = "pbMain";
-            this.pbMain.Size = new System.Drawing.Size(439, 365);
+            this.pbMain.Size = new System.Drawing.Size(590, 365);
             this.pbMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMain.TabIndex = 1;
             this.pbMain.TabStop = false;
@@ -118,6 +106,28 @@
             this.pnlInfo.Name = "pnlInfo";
             this.pnlInfo.Size = new System.Drawing.Size(441, 148);
             this.pnlInfo.TabIndex = 3;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSave.Location = new System.Drawing.Point(8, 107);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(146, 36);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnView
+            // 
+            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnView.Location = new System.Drawing.Point(160, 39);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(94, 31);
+            this.btnView.TabIndex = 4;
+            this.btnView.Text = "View";
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnClear
             // 
@@ -164,6 +174,16 @@
             this.grpCheckBox.TabStop = false;
             this.grpCheckBox.Text = "Behavior";
             // 
+            // chkAutosaveNext
+            // 
+            this.chkAutosaveNext.AutoSize = true;
+            this.chkAutosaveNext.Location = new System.Drawing.Point(8, 101);
+            this.chkAutosaveNext.Name = "chkAutosaveNext";
+            this.chkAutosaveNext.Size = new System.Drawing.Size(167, 24);
+            this.chkAutosaveNext.TabIndex = 3;
+            this.chkAutosaveNext.Text = "Autosave on next?";
+            this.chkAutosaveNext.UseVisualStyleBackColor = true;
+            // 
             // chkAutosaveExit
             // 
             this.chkAutosaveExit.AutoSize = true;
@@ -185,38 +205,6 @@
             this.chkRegion.TabIndex = 0;
             this.chkRegion.Text = "Confirm region?";
             this.chkRegion.UseVisualStyleBackColor = true;
-            // 
-            // btnView
-            // 
-            this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnView.Location = new System.Drawing.Point(160, 39);
-            this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(94, 31);
-            this.btnView.TabIndex = 4;
-            this.btnView.Text = "View";
-            this.btnView.UseVisualStyleBackColor = true;
-            this.btnView.Click += new System.EventHandler(this.btnView_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSave.Location = new System.Drawing.Point(8, 107);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(146, 36);
-            this.btnSave.TabIndex = 5;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // chkAutosaveNext
-            // 
-            this.chkAutosaveNext.AutoSize = true;
-            this.chkAutosaveNext.Location = new System.Drawing.Point(8, 101);
-            this.chkAutosaveNext.Name = "chkAutosaveNext";
-            this.chkAutosaveNext.Size = new System.Drawing.Size(167, 24);
-            this.chkAutosaveNext.TabIndex = 3;
-            this.chkAutosaveNext.Text = "Autosave on next?";
-            this.chkAutosaveNext.UseVisualStyleBackColor = true;
             // 
             // ImageSelector
             // 
@@ -245,7 +233,6 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel lpanRoot;
-        private System.Windows.Forms.Panel pnlImageList;
         private System.Windows.Forms.PictureBox pbMain;
         private System.Windows.Forms.PictureBox pbOrientation;
         private System.Windows.Forms.Panel pnlInfo;
