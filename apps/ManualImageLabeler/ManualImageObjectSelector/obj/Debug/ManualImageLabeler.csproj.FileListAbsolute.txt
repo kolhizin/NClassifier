@@ -13,3 +13,6 @@ D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelec
 D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.pdb
 D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageLabeler.csprojResolveAssemblyReference.cache
 D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.ImageClassifier.resources
+d:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageObjectSelector\bin\Debug\ManualImageObjectSelector.exe.config
+d:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.exe
+d:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.pdb
