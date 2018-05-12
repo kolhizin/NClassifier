@@ -9,11 +9,11 @@ namespace ManualImageObjectSelector
     class ClassifierResult
     {
         public Dictionary<string, int> labels;
-        public Dictionary<string, LinkedList<string>> observations;
+        public Dictionary<string, List<string>> observations;
         public ClassifierResult()
         {
             labels = new Dictionary<string, int>();
-            observations = new Dictionary<string, LinkedList<string>>();
+            observations = new Dictionary<string, List<string>>();
         }
     }
 }

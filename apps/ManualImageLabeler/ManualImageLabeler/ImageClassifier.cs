@@ -17,10 +17,19 @@ namespace ManualImageObjectSelector
         private int cur_index = 0;
         private ClassifierResult result;
 
+        private BindingSource lstBs;
+
         private void save()
         {
             string txt = Newtonsoft.Json.JsonConvert.SerializeObject(result);
             System.IO.File.WriteAllText(out_fname, txt);
+        }
+        private void updateLabelsView()
+        {
+            string fk = System.IO.Path.GetFileName(in_fnames[cur_index]);
+            lstBs.DataSource = null;
+            if (result.observations.ContainsKey(fk))
+                lstBs.DataSource = result.observations[fk];
         }
         private void setImage(int idx)
         {
@@ -34,7 +43,10 @@ namespace ManualImageObjectSelector
             cur_index = idx;
             pbMain.Image = null;
             if (cur_index < in_fnames.Length)
+            {
                 pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+                updateLabelsView();
+            }
         }
         private void nextImage()
         {
@@ -48,14 +60,21 @@ namespace ManualImageObjectSelector
             cur_index += 1;
             pbMain.Image = null;
             if (cur_index < in_fnames.Length)
+            {
                 pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+                updateLabelsView();
+            }
         }
         private void addLabel(string lbl)
         {
             string fk = System.IO.Path.GetFileName(in_fnames[cur_index]);
             if (!result.observations.ContainsKey(fk))
-                result.observations[fk] = new LinkedList<string>();
-            result.observations[fk].AddLast(lbl);
+            {
+                result.observations[fk] = new List<string>();
+                updateLabelsView();
+            }
+            result.observations[fk].Add(lbl);
+            lstBs.ResetBindings(false);
             if (chkAutoNext.Checked)
                 nextImage();
         }
@@ -64,6 +83,8 @@ namespace ManualImageObjectSelector
             this.in_fnames = in_fnames;
             this.out_fname = out_fname;
             InitializeComponent();
+            lstBs = new BindingSource();
+            lstLabels.DataSource = lstBs;
             if (!System.IO.File.Exists(out_fname))
             {
                 MessageBox.Show("Output file (containing at least label dictionary) does not exist!", "Critical error!");
@@ -103,7 +124,7 @@ namespace ManualImageObjectSelector
                 string lbl = txtLabel.Text.ToLower();
                 if (!result.labels.ContainsKey(lbl))
                 {
-                    DialogResult res = MessageBox.Show("Specified label does not exist in dictionary!", "Attention!", MessageBoxButtons.YesNo);
+                    DialogResult res = MessageBox.Show("Specified label does not exist in dictionary! Do you want to add it?", "Attention!", MessageBoxButtons.YesNo);
                     if (res == DialogResult.Yes)
                         result.labels.Add(lbl, 0);
                     else
@@ -111,12 +132,78 @@ namespace ManualImageObjectSelector
                 }
                 addLabel(lbl);
             }
+            if(e.KeyCode == Keys.Escape)
+            {
+                pbMain.Focus();
+            }
         }
 
         private void ImageClassifier_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (chkSaveExit.Checked)
                 save();
+        }
+
+        private void ImageClassifier_KeyDown(object sender, KeyEventArgs e)
+        {
+            int hotKey = -1;
+            if (e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.D1)
+                hotKey = 1;
+            if (e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.D2)
+                hotKey = 2;
+            if (e.KeyCode == Keys.NumPad3 || e.KeyCode == Keys.D3)
+                hotKey = 3;
+            if (e.KeyCode == Keys.NumPad4 || e.KeyCode == Keys.D4)
+                hotKey = 4;
+            if (e.KeyCode == Keys.NumPad5 || e.KeyCode == Keys.D5)
+                hotKey = 5;
+            if (e.KeyCode == Keys.NumPad6 || e.KeyCode == Keys.D6)
+                hotKey = 6;
+            if (e.KeyCode == Keys.NumPad7 || e.KeyCode == Keys.D7)
+                hotKey = 7;
+            if (e.KeyCode == Keys.NumPad8 || e.KeyCode == Keys.D8)
+                hotKey = 8;
+            if (e.KeyCode == Keys.NumPad9 || e.KeyCode == Keys.D9)
+                hotKey = 9;
+            if(hotKey > 0 && !txtLabel.Focused)
+            {
+                try
+                {
+                    string label = result.labels.First(x => x.Value == hotKey).Key;
+                    addLabel(label);
+                }
+                catch
+                {
+                    //no label
+                }                
+            }
+        }
+
+        private void spltMain_Panel2_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            e.IsInputKey = true;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            if (cur_index >= in_fnames.Length)
+                return;
+            string fk = System.IO.Path.GetFileName(in_fnames[cur_index]);
+            if (!result.observations.ContainsKey(fk))
+                return;
+            result.observations[fk].Clear();
+            lstBs.ResetBindings(false);
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (cur_index >= in_fnames.Length)
+                return;
+            string fk = System.IO.Path.GetFileName(in_fnames[cur_index]);
+            if (!result.observations.ContainsKey(fk))
+                return;
+            result.observations[fk].Remove(lstLabels.SelectedItem.ToString());
+            lstBs.ResetBindings(false);
         }
     }
 }
