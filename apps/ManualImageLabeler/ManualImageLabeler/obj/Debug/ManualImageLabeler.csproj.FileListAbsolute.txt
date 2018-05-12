@@ -16,3 +16,6 @@ D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelec
 d:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageObjectSelector\bin\Debug\ManualImageObjectSelector.exe.config
 d:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.exe
 d:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.pdb
+D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\bin\Debug\ManualImageObjectSelector.exe.config
+D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageObjectSelector.exe
+D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageObjectSelector.pdb
