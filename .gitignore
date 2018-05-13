@@ -1,6 +1,7 @@
 *.class
-
 *.log
-
 *.jpg
 *.jpeg
+*.suo
+*.pdb
+*.cache

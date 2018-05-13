@@ -15,7 +15,22 @@ namespace ManualImageObjectSelector
         public ConfirmRegionDialog(Image img, OrientedRect rect)
         {            
             InitializeComponent();
-            picBox.Image = rect.transformBitmap(new Bitmap(img), picBox.ClientSize.Width, picBox.ClientSize.Height);
+            float srcAspect = ((float)img.Width * rect.w) / ((float)img.Height * rect.h);
+            float dstAspect = (float)picBox.ClientSize.Width / (float)picBox.ClientSize.Height;
+            int w = 0;
+            int h = 0;
+            if(srcAspect > dstAspect)
+            {
+                //src image is wider, hence
+                w = picBox.ClientSize.Width;
+                h = (int)(w / srcAspect);
+            }else
+            {
+                h = picBox.ClientSize.Height;
+                w = (int)(h * srcAspect);
+            }
+            
+            picBox.Image = rect.transformBitmap(new Bitmap(img), w, h);
         }
     }
 }

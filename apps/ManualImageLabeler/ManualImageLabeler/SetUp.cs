@@ -87,29 +87,10 @@ namespace ManualImageObjectSelector
                 out_fname = sfd.FileName;
             }
         }
-
-        private void btnConfirm_Click(object sender, EventArgs e)
-        {
-            if(in_fnames == null)
-            {
-                MessageBox.Show("No input files selected (due to issues)!");
-                return;
-            }
-            if(out_fname == null)
-            {
-                MessageBox.Show("No output file specified!");
-                return;
-            }
-            this.Hide();
-            var f = new ImageSelector(in_fnames, out_fname);
-            f.FormClosed += (s, agrs) => this.Close();
-            f.Show();
-        }
-
         private void btnClassifier_Click(object sender, EventArgs e)
         {
-            /*
-            if (in_fnames == null)
+            
+            if (in_fnames == null || in_fnames.Length <= 0)
             {
                 MessageBox.Show("No input files selected (due to issues)!");
                 return;
@@ -119,9 +100,27 @@ namespace ManualImageObjectSelector
                 MessageBox.Show("No output file specified!");
                 return;
             }
-            */
+            
             this.Hide();
             var f = new ClassifierSetup(in_fnames, out_fname);
+            f.FormClosed += (s, agrs) => this.Close();
+            f.Show();
+        }
+
+        private void btnObjectSelector_Click(object sender, EventArgs e)
+        {
+            if (in_fnames == null || in_fnames.Length <= 0)
+            {
+                MessageBox.Show("No input files selected (due to issues)!");
+                return;
+            }
+            if (out_fname == null)
+            {
+                MessageBox.Show("No output file specified!");
+                return;
+            }
+            this.Hide();
+            var f = new ImageSelector(in_fnames, out_fname);
             f.FormClosed += (s, agrs) => this.Close();
             f.Show();
         }

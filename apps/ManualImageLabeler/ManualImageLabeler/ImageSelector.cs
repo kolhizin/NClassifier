@@ -98,8 +98,14 @@ namespace ManualImageObjectSelector
         }
         private void loadResult()
         {
-            string res = System.IO.File.ReadAllText(out_fname);
-            result = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, ImageRegionInfo>>(res);
+            if (System.IO.File.Exists(out_fname))
+            {
+                string res = System.IO.File.ReadAllText(out_fname);
+                result = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, ImageRegionInfo>>(res);
+            }else
+            {
+                result = new Dictionary<string, ImageRegionInfo>();
+            }
         }
         private void setMainImage(int idx)
         {
@@ -109,12 +115,9 @@ namespace ManualImageObjectSelector
                 return;
             }
             cur_index = idx;
-            pbMain.Image = null;
-            if (cur_index < in_fnames.Length)
-            {
-                pbMain.Image = Image.FromFile(in_fnames[cur_index]);
-                loadOrCreateImageRegion(in_fnames[cur_index]);
-            }
+            pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+            txtCurIndex.Text = (cur_index + 1).ToString();
+            loadOrCreateImageRegion(in_fnames[cur_index]);
         }
         private void setMainImageNext()
         {
@@ -124,12 +127,9 @@ namespace ManualImageObjectSelector
                 return;
             }
             cur_index += 1;
-            pbMain.Image = null;
-            if (cur_index < in_fnames.Length)
-            {
-                pbMain.Image = Image.FromFile(in_fnames[cur_index]);
-                loadOrCreateImageRegion(in_fnames[cur_index]);
-            }
+            pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+            txtCurIndex.Text = (cur_index + 1).ToString();
+            loadOrCreateImageRegion(in_fnames[cur_index]);
         }
 
         public ImageSelector(string [] in_fnames, string out_fname)
@@ -139,6 +139,7 @@ namespace ManualImageObjectSelector
             this.result = new Dictionary<string, ImageRegionInfo>();
             InitializeComponent();
             loadResult();
+            lblTotal.Text = in_fnames.Length.ToString();
             setMainImage(0);
             cur_direction = new PointF(0.0f, 1.0f);
         }
@@ -373,6 +374,20 @@ namespace ManualImageObjectSelector
         {
             if (chkAutosaveExit.Checked)
                 saveResult();
+        }
+
+        private void txtCurIndex_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                int res = 0;
+                if (!int.TryParse(txtCurIndex.Text, out res))
+                    MessageBox.Show("Invalid input!", "Error!");
+                else
+                    setMainImage(res - 1);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

@@ -41,12 +41,9 @@ namespace ManualImageObjectSelector
                 return;
             }
             cur_index = idx;
-            pbMain.Image = null;
-            if (cur_index < in_fnames.Length)
-            {
-                pbMain.Image = Image.FromFile(in_fnames[cur_index]);
-                updateLabelsView();
-            }
+            pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+            txtCurIndex.Text = (cur_index + 1).ToString();
+            updateLabelsView();
         }
         private void nextImage()
         {
@@ -58,12 +55,9 @@ namespace ManualImageObjectSelector
                 return;
             }
             cur_index += 1;
-            pbMain.Image = null;
-            if (cur_index < in_fnames.Length)
-            {
-                pbMain.Image = Image.FromFile(in_fnames[cur_index]);
-                updateLabelsView();
-            }
+            pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+            txtCurIndex.Text = (cur_index + 1).ToString();
+            updateLabelsView();
         }
         private void addLabel(string lbl)
         {
@@ -109,6 +103,7 @@ namespace ManualImageObjectSelector
                 values[idx] = v;
                 idx++;
             }
+            lblTotal.Text = in_fnames.Length.ToString();
             txtLabel.AutoCompleteCustomSource.AddRange(values);
             setImage(0);
         }
@@ -224,6 +219,20 @@ namespace ManualImageObjectSelector
                 return;
             result.observations[fk].Remove(lstLabels.SelectedItem.ToString());
             lstBs.ResetBindings(false);
+        }
+
+        private void txtCurIndex_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                int res = 0;
+                if (!int.TryParse(txtCurIndex.Text, out res))
+                    MessageBox.Show("Invalid input!", "Error!");
+                else
+                    setImage(res - 1);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

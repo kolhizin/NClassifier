@@ -30,8 +30,8 @@
         {
             this.tblLayout = new System.Windows.Forms.TableLayoutPanel();
             this.pnlButtons = new System.Windows.Forms.Panel();
-            this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
             this.picBox = new System.Windows.Forms.PictureBox();
             this.tblLayout.SuspendLayout();
             this.pnlButtons.SuspendLayout();
@@ -64,17 +64,6 @@
             this.pnlButtons.Size = new System.Drawing.Size(333, 44);
             this.pnlButtons.TabIndex = 0;
             // 
-            // btnOk
-            // 
-            this.btnOk.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOk.Location = new System.Drawing.Point(9, 3);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(126, 38);
-            this.btnOk.TabIndex = 0;
-            this.btnOk.Text = "Ok";
-            this.btnOk.UseVisualStyleBackColor = true;
-            // 
             // btnCancel
             // 
             this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -86,12 +75,24 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
+            // btnOk
+            // 
+            this.btnOk.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnOk.Location = new System.Drawing.Point(9, 3);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(126, 38);
+            this.btnOk.TabIndex = 0;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = true;
+            // 
             // picBox
             // 
             this.picBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picBox.Location = new System.Drawing.Point(3, 3);
             this.picBox.Name = "picBox";
             this.picBox.Size = new System.Drawing.Size(333, 318);
+            this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBox.TabIndex = 1;
             this.picBox.TabStop = false;
             // 

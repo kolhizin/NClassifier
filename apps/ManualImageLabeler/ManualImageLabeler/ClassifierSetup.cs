@@ -28,7 +28,7 @@ namespace ManualImageObjectSelector
                     continue;
                 string lbl = ((string)lbl_obj).ToLower();
                 object hk_obj = dgvLabels.Rows[i].Cells["Hotkey"].Value;
-                if (hk_obj == null)
+                if (hk_obj == null || string.IsNullOrEmpty((string)hk_obj))
                     cres.labels[lbl] = 0;
                 else
                     cres.labels[lbl] = int.Parse((string)hk_obj);
@@ -81,7 +81,7 @@ namespace ManualImageObjectSelector
                     return new Tuple<bool, string>(false, string.Format("Labels should be unique. \"{0}\" specified at least twice.", lbl));
 
                 object hk_obj = dgvLabels.Rows[i].Cells["Hotkey"].Value;
-                if (hk_obj == null)
+                if (hk_obj == null || string.IsNullOrEmpty((string)hk_obj))
                     labelHK[lbl] = 0;
                 else
                 {
