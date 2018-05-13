@@ -73,6 +73,10 @@ namespace ManualImageObjectSelector
                 result.observations[fk] = new List<string>();
                 updateLabelsView();
             }
+            //check that label is not present
+            if (result.observations[fk].Contains(lbl))
+                return;
+            //add label if not exists
             result.observations[fk].Add(lbl);
             lstBs.ResetBindings(false);
             if (chkAutoNext.Checked)
@@ -146,6 +150,20 @@ namespace ManualImageObjectSelector
 
         private void ImageClassifier_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Right)
+            {
+                nextImage();
+                e.Handled = true;
+                return;
+            }
+            else if (e.KeyCode == Keys.Left)
+            {
+                setImage(cur_index - 1);
+                e.Handled = true;
+                return;
+            }
+            
+            //process hotkeys
             int hotKey = -1;
             if (e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.D1)
                 hotKey = 1;
@@ -171,6 +189,8 @@ namespace ManualImageObjectSelector
                 {
                     string label = result.labels.First(x => x.Value == hotKey).Key;
                     addLabel(label);
+                    e.Handled = true;
+                    return;
                 }
                 catch
                 {

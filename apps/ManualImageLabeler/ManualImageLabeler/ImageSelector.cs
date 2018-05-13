@@ -160,6 +160,7 @@ namespace ManualImageObjectSelector
                     if (chkAutosaveNext.Checked)
                         saveResult();
                     setMainImageNext();
+                    e.Handled = true;
                 }
             }
             if (e.KeyCode == Keys.Left)
@@ -169,6 +170,7 @@ namespace ManualImageObjectSelector
                     if (chkAutosaveNext.Checked)
                         saveResult();
                     setMainImage(cur_index - 1);
+                    e.Handled = true;
                 }
             }
             if (e.KeyCode == Keys.W)
