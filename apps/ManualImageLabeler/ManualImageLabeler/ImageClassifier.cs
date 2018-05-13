@@ -145,13 +145,13 @@ namespace ManualImageObjectSelector
 
         private void ImageClassifier_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.OemCloseBrackets || e.KeyCode == Keys.OemPeriod)
             {
                 nextImage();
                 e.Handled = true;
                 return;
             }
-            else if (e.KeyCode == Keys.Left)
+            else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.OemOpenBrackets || e.KeyCode == Keys.Oemcomma)
             {
                 setImage(cur_index - 1);
                 e.Handled = true;
