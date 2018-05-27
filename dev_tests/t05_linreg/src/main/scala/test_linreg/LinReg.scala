@@ -4,13 +4,14 @@ import breeze.linalg._
 
 //Start simple: only vectors for now
 class LayerFC(input_size: Int, output_size: Int){
-  private var beta = DenseMatrix.zeros[Double](input_size, output_size)
+  private var beta = DenseMatrix.zeros[Double](output_size, input_size)
   private var alpha = DenseVector.zeros[Double](output_size)
 
   def update_weights(weights : (DenseMatrix[Double], DenseVector[Double])) : Unit = {
     assert(beta.rows == weights._1.rows)
     assert(beta.cols == weights._1.cols)
     assert(alpha.length == weights._2.length)
+
     beta = weights._1
     alpha = weights._2
   }
@@ -31,6 +32,7 @@ class LayerFC(input_size: Int, output_size: Int){
   }
 }
 
+//this is bad design -- restricts you on sample-update
 class LossFunc(y: DenseVector[Double]){
   def forward(X: DenseMatrix[Double]) : Double = {
     val diff = (X.toDenseVector - y)
@@ -42,50 +44,62 @@ class LossFunc(y: DenseVector[Double]){
 }
 
 object LinReg extends App{
+
+
+  def makeOneStep(fc: LayerFC, lf: LossFunc, data: DenseMatrix[Double], learnRate: Double = 0.01):Double = {
+    val z = fc.forward(data)
+    val loss = lf.forward(z)
+    val dz = lf.backward_dx(z)
+    val (db, da) = fc.backward_dw(dz, data)
+
+    val (b, a) = fc.get_weights()
+    fc.update_weights((b - learnRate * db, a - learnRate * da))
+    loss
+  }
+
   def makeSample1x1(num_samples: Int) : (DenseMatrix[Double], DenseVector[Double]) = {
     val x = DenseMatrix.rand[Double](num_samples, 1, breeze.stats.distributions.Gaussian(0, 1))
     val y = (0.5 - 0.8 * x).toDenseVector
     (x, y)
   }
-
-  def makeOneStep(fc: LayerFC, lf: LossFunc, data: DenseMatrix[Double], learnRate: Double = 0.01):Double = {
-    val z = fc.forward(data)
-    val loss = lossf.forward(z)
-    val dz = lossf.backward_dx(z)
-    val (db, da) = clc.backward_dw(dz, data)
-    val (b, a) = clc.get_weights()
-    clc.update_weights((b - learnRate * db, a - learnRate * da))
-    loss
+  def makeFC1x1 = {
+    val res = new LayerFC(1, 1)
+    res.update_weights((DenseMatrix.rand[Double](1,1, breeze.stats.distributions.Gaussian(0, 1)), DenseVector.rand[Double](1, breeze.stats.distributions.Gaussian(0, 1))))
+    res
   }
 
-  val (x, y) = makeSample1x1(10)
-  val clc = new LayerFC(1, 1)
-  val lossf = new LossFunc(y)
-  clc.update_weights((DenseMatrix.rand[Double](1,1, breeze.stats.distributions.Gaussian(0, 1)), DenseVector.rand[Double](1, breeze.stats.distributions.Gaussian(0, 1))))
-
-  println(clc.get_weights)
-
-  val loss_start = lossf.forward(clc.forward(x))
-  for (step <- 1 to 50){
-    println(makeOneStep(clc, lossf, x))
+  def makeSample3x1(num_samples: Int) : (DenseMatrix[Double], DenseVector[Double]) = {
+    val x = DenseMatrix.rand[Double](num_samples, 3, breeze.stats.distributions.Gaussian(0, 1))
+    val y = (15.5 - 0.8 * x(::, 0) + 0.3 * x(::, 1) + 2.7 * x(::, 2)).toDenseVector
+    (x, y)
   }
-  println(clc.get_weights)
-  /*
-  println(x)
-  println("forward:")
-  val z = clc.forward(x)
-  println(z)
-  println("loss:")
-  val loss =  lossf.forward(z)
-  println(loss)
-  println("loss gradient:")
-  val dz = lossf.backward_dx(z)
-  println(dz)
-  println("backward:")
-  println(dz.rows, dz.cols, x.rows, x.cols)
-  val dw = clc.backward_dw(dz, x)
-  println(dw)
-  */
+  def makeFC3x1 = {
+    val res = new LayerFC(3, 1)
+    res.update_weights((DenseMatrix.rand[Double](1,3, breeze.stats.distributions.Gaussian(0, 1)), DenseVector.rand[Double](1, breeze.stats.distributions.Gaussian(0, 1))))
+    res
+  }
+
+  def runTest(x:DenseMatrix[Double], y:DenseVector[Double], layerFC: LayerFC, num_steps: Int) : Unit = {
+    val lossFunc = new LossFunc(y)
+    val loss0 = lossFunc.forward(layerFC.forward(x))
+    for (step <- 1 to num_steps) makeOneStep(layerFC, lossFunc, x)
+    val loss1 = lossFunc.forward(layerFC.forward(x))
+    println("Loss %2.4f -> %2.4f, Result is %s".formatLocal(java.util.Locale.US, loss0, loss1, layerFC.get_weights.toString))
+  }
+
+  //1x1 test
+  println("\n1x1 test:")
+  val (t1x1x, t1x1y) = makeSample1x1(50)
+  val t1x1fc = makeFC1x1
+  runTest(t1x1x, t1x1y, t1x1fc, 100)
+
+  //3x1 test
+  println("\n3x1 test:")
+  val (t3x1x, t3x1y) = makeSample3x1(50)
+  val t3x1fc = makeFC3x1
+  runTest(t3x1x, t3x1y, t3x1fc, 100)
+
+
   println("Done")
 }
 
