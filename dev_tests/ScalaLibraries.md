@@ -4,4 +4,4 @@
 
 **ND4J/ND4S** is in progress of testing. But as of now (May'18) it does not support Scala 2.12, which in turn leads to fallback to Java-8 instead of Java-10.
 
-**mxnet** seems to be very promising for DL, but is not yet supported on Windows (May'18). But things are changing quickly.
+**MXNet** seems to be very promising for DL, but is not yet supported on Windows (May'18). But things are changing quickly.
