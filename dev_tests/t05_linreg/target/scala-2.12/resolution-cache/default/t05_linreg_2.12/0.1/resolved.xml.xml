@@ -4,7 +4,7 @@
 		module="t05_linreg_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20180527092550"
+		publication="20180527141146"
 	>
 		<description>
 		t05_linreg
@@ -30,8 +30,8 @@
 		<artifact name="t05_linreg_2.12" type="doc" ext="jar" conf="compile" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.6" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.12.6" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.4" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scalanlp" name="breeze_2.12" rev="0.13" conf="compile->default(compile)"/>
 		<dependency org="org.scalanlp" name="breeze-natives_2.12" rev="0.13" conf="compile->default(compile)"/>
 	</dependencies>

@@ -17,24 +17,80 @@ class LayerFC(input_size: Int, output_size: Int){
 
   def get_weights() : (DenseMatrix[Double], DenseVector[Double]) = (beta, alpha)
 
-  def forward(X: DenseMatrix[Double]) : DenseMatrix[Double] = alpha + beta * X
-  def forward(X: DenseVector[Double]) : DenseVector[Double] = alpha + beta * X
 
-  def backward(dY: DenseMatrix[Double], X: DenseMatrix[Double])
-    : (DenseMatrix[Double], (DenseMatrix[Double], DenseVector[Double])) = {
-    /*
-    Y = alpha + beta * X
-    dL / dY - we have (first argument)
-    dL / dX - we have to find
+  def forward(X: DenseMatrix[Double]) : DenseMatrix[Double] = {
+    val tmp = X * beta.t
+    tmp(*, ::) + alpha
+  }
 
-    dL / dXij = sum(a, b) { dL/dYab * dYab / dXij }
-    dYab / dXij = (alpha_a + beta_a * X^b)
-     */
+  def backward_dw(dY: DenseMatrix[Double], X: DenseMatrix[Double]) : (DenseMatrix[Double], DenseVector[Double]) = {
+    (dY.t * X, sum(dY, Axis._0).t)
+  }
+  def backward_dx(dY: DenseMatrix[Double], X: DenseMatrix[Double]) : DenseMatrix[Double] = {
+    dY * beta
+  }
+}
+
+class LossFunc(y: DenseVector[Double]){
+  def forward(X: DenseMatrix[Double]) : Double = {
+    val diff = (X.toDenseVector - y)
+    diff dot diff
+  }
+  def backward_dx(X: DenseMatrix[Double]) : DenseMatrix[Double] = {
+    2.0 * (X - y.toDenseMatrix.t)
   }
 }
 
 object LinReg extends App{
-  val x = DenseVector.ones[Double](3)
+  def makeSample1x1(num_samples: Int) : (DenseMatrix[Double], DenseVector[Double]) = {
+    val x = DenseMatrix.rand[Double](num_samples, 1, breeze.stats.distributions.Gaussian(0, 1))
+    val y = (0.5 - 0.8 * x).toDenseVector
+    (x, y)
+  }
+
+  def makeOneStep(fc: LayerFC, lf: LossFunc, data: DenseMatrix[Double], learnRate: Double = 0.01):Double = {
+    val z = fc.forward(data)
+    val loss = lossf.forward(z)
+    val dz = lossf.backward_dx(z)
+    val (db, da) = clc.backward_dw(dz, data)
+    val (b, a) = clc.get_weights()
+    clc.update_weights((b - learnRate * db, a - learnRate * da))
+    loss
+  }
+
+  val (x, y) = makeSample1x1(10)
+  val clc = new LayerFC(1, 1)
+  val lossf = new LossFunc(y)
+  clc.update_weights((DenseMatrix.rand[Double](1,1, breeze.stats.distributions.Gaussian(0, 1)), DenseVector.rand[Double](1, breeze.stats.distributions.Gaussian(0, 1))))
+
+  println(clc.get_weights)
+
+  val loss_start = lossf.forward(clc.forward(x))
+  for (step <- 1 to 50){
+    println(makeOneStep(clc, lossf, x))
+  }
+  println(clc.get_weights)
+  /*
   println(x)
+  println("forward:")
+  val z = clc.forward(x)
+  println(z)
+  println("loss:")
+  val loss =  lossf.forward(z)
+  println(loss)
+  println("loss gradient:")
+  val dz = lossf.backward_dx(z)
+  println(dz)
+  println("backward:")
+  println(dz.rows, dz.cols, x.rows, x.cols)
+  val dw = clc.backward_dw(dz, x)
+  println(dw)
+  */
   println("Done")
 }
+
+
+
+/*
+
+*/

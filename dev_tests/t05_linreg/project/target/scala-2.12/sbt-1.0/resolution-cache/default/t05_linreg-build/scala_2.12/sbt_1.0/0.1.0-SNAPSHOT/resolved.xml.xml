@@ -4,7 +4,7 @@
 		module="t05_linreg-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180527092319"
+		publication="20180527140555"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

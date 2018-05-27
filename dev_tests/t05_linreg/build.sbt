@@ -2,7 +2,7 @@ name := "t05_linreg"
 
 version := "0.1"
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.4"
 
 resolvers += "Sonatype Releases" at  "https://oss.sonatype.org/content/repositories/releases/"
 
