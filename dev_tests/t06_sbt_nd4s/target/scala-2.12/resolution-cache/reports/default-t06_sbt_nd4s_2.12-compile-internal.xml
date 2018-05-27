@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="t06_sbt_nd4s_2.12"
+		revision="0.1"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180527190046"/>
+	<dependencies>
+		<module organisation="org.nd4j" name="nd4j-native-platform">
+			<revision name="1.0.0-alpha" status="release" pubdate="20180405102551" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4326" time="275" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native-platform\ivy-1.0.0-alpha.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native-platform\ivy-1.0.0-alpha.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native-platform/1.0.0-alpha/nd4j-native-platform-1.0.0-alpha.pom"/>
+				<caller organisation="default" name="t06_sbt_nd4s_2.12" conf="compile-internal, compile, provided, optional" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="nd4j-native-platform" type="jar" ext="jar" status="successful" details="" size="2586" time="609" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native-platform\jars\nd4j-native-platform-1.0.0-alpha.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native-platform/1.0.0-alpha/nd4j-native-platform-1.0.0-alpha.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.nd4j" name="nd4j-native">
+			<revision name="1.0.0-alpha" status="release" pubdate="20180405102543" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="18610" time="253" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\ivy-1.0.0-alpha.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\ivy-1.0.0-alpha.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-native-platform" conf="default, compile, runtime, master" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="android-arm" status="successful" details="" size="6516020" time="5401" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-android-arm.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-android-arm.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="8246215" time="2132" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="7305963" time="3221" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="android-x86_64" status="successful" details="" size="8064383" time="2609" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-android-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-android-x86_64.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="8149497" time="2258" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="ios-x86_64" status="successful" details="" size="6077149" time="2163" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-ios-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-ios-x86_64.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" status="successful" details="" size="1152146" time="464" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="android-arm64" status="successful" details="" size="6993768" time="1606" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-android-arm64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-android-arm64.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="ios-arm64" status="successful" details="" size="5175162" time="1414" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-ios-arm64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-ios-arm64.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="android-x86" status="successful" details="" size="9270711" time="1921" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-android-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-android-x86.jar"/>
+					</artifact>
+					<artifact name="nd4j-native" type="jar" ext="jar" extra-classifier="linux-ppc64le" status="successful" details="" size="5677978" time="1743" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native\jars\nd4j-native-1.0.0-alpha-linux-ppc64le.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-linux-ppc64le.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.nd4j" name="nd4j-native-api">
+			<revision name="1.0.0-alpha" status="release" pubdate="20180406003317" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1102" time="241" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native-api\ivy-1.0.0-alpha.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native-api\ivy-1.0.0-alpha.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native-api/1.0.0-alpha/nd4j-native-api-1.0.0-alpha.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-native" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="nd4j-native-api" type="jar" ext="jar" status="successful" details="" size="42459" time="575" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-native-api\jars\nd4j-native-api-1.0.0-alpha.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-native-api/1.0.0-alpha/nd4j-native-api-1.0.0-alpha.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.nd4j" name="nd4j-api">
+			<revision name="1.0.0-alpha" status="release" pubdate="20180406003316" resolver="public" artresolver="public" homepage="http://nd4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="8880" time="252" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-api\ivy-1.0.0-alpha.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-api\ivy-1.0.0-alpha.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/nd4j/nd4j-api/1.0.0-alpha/nd4j-api-1.0.0-alpha.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-native-api" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<caller organisation="org.nd4j" name="nd4j-native" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="nd4j-api" type="jar" ext="jar" status="successful" details="" size="3617600" time="2688" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-api\jars\nd4j-api-1.0.0-alpha.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-api/1.0.0-alpha/nd4j-api-1.0.0-alpha.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.ericaro" name="neoitertools">
+			<revision name="1.0.0" status="release" pubdate="20110507031010" resolver="public" artresolver="public" homepage="http://${googlecode}.googlecode.com/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4607" time="241" location="C:\Users\KolhiziN\.ivy2\cache\net.ericaro\neoitertools\ivy-1.0.0.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\net.ericaro\neoitertools\ivy-1.0.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/ericaro/neoitertools/1.0.0/neoitertools-1.0.0.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="neoitertools" type="jar" ext="jar" status="successful" details="" size="53712" time="759" location="C:\Users\KolhiziN\.ivy2\cache\net.ericaro\neoitertools\jars\neoitertools-1.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/ericaro/neoitertools/1.0.0/neoitertools-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="uk.com.robust-it" name="cloning">
+			<revision name="1.9.3" status="release" pubdate="20160919004933" resolver="public" artresolver="public" homepage="https://code.google.com/p/cloning/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="4632" time="233" location="C:\Users\KolhiziN\.ivy2\cache\uk.com.robust-it\cloning\ivy-1.9.3.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\uk.com.robust-it\cloning\ivy-1.9.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/uk/com/robust-it/cloning/1.9.3/cloning-1.9.3.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="1.9.3" rev-constraint-default="1.9.3" rev-constraint-dynamic="1.9.3" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="cloning" type="bundle" ext="jar" status="successful" details="" size="26375" time="696" location="C:\Users\KolhiziN\.ivy2\cache\uk.com.robust-it\cloning\bundles\cloning-1.9.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/uk/com/robust-it/cloning/1.9.3/cloning-1.9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.os72" name="protobuf-java-util-shaded-351">
+			<revision name="0.9" status="release" pubdate="20180201061048" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="3-Clause BSD License" url="https://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="successful" details="" size="5786" time="256" location="C:\Users\KolhiziN\.ivy2\cache\com.github.os72\protobuf-java-util-shaded-351\ivy-0.9.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\com.github.os72\protobuf-java-util-shaded-351\ivy-0.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/os72/protobuf-java-util-shaded-351/0.9/protobuf-java-util-shaded-351-0.9.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="protobuf-java-util-shaded-351" type="jar" ext="jar" status="successful" details="" size="69970" time="806" location="C:\Users\KolhiziN\.ivy2\cache\com.github.os72\protobuf-java-util-shaded-351\jars\protobuf-java-util-shaded-351-0.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/os72/protobuf-java-util-shaded-351/0.9/protobuf-java-util-shaded-351-0.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.7" status="release" pubdate="20160615025554" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1445" time="293" location="C:\Users\KolhiziN\.ivy2\cache\com.google.code.gson\gson\ivy-2.7.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\com.google.code.gson\gson\ivy-2.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7.pom"/>
+				<caller organisation="com.github.os72" name="protobuf-java-util-shaded-351" conf="compile, runtime" rev="2.7" rev-constraint-default="2.7" rev-constraint-dynamic="2.7" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="successful" details="" size="231952" time="345" location="C:\Users\KolhiziN\.ivy2\cache\com.google.code.gson\gson\jars\gson-2.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="19.0" status="release" pubdate="20151209235835" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="6792" time="239" location="C:\Users\KolhiziN\.ivy2\cache\com.google.guava\guava\ivy-19.0.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\com.google.guava\guava\ivy-19.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0.pom"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="18.0" rev-constraint-default="18.0" rev-constraint-dynamic="18.0" callerrev="0.9.10"/>
+				<caller organisation="com.github.os72" name="protobuf-java-util-shaded-351" conf="compile, runtime" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="successful" details="" size="2308517" time="2777" location="C:\Users\KolhiziN\.ivy2\cache\com.google.guava\guava\bundles\guava-19.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="18.0" status="release" pubdate="20140825224834" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5576" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.google.guava\guava\ivy-18.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom"/>
+				<evicted-by rev="19.0"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="18.0" rev-constraint-default="18.0" rev-constraint-dynamic="18.0" callerrev="0.9.10"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.os72" name="protobuf-java-shaded-351">
+			<revision name="0.9" status="release" pubdate="20180201060946" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="3-Clause BSD License" url="https://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="successful" details="" size="5806" time="261" location="C:\Users\KolhiziN\.ivy2\cache\com.github.os72\protobuf-java-shaded-351\ivy-0.9.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\com.github.os72\protobuf-java-shaded-351\ivy-0.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/os72/protobuf-java-shaded-351/0.9/protobuf-java-shaded-351-0.9.pom"/>
+				<caller organisation="com.github.os72" name="protobuf-java-util-shaded-351" conf="compile, runtime" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.9"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="protobuf-java-shaded-351" type="jar" ext="jar" status="successful" details="" size="1427368" time="1729" location="C:\Users\KolhiziN\.ivy2\cache\com.github.os72\protobuf-java-shaded-351\jars\protobuf-java-shaded-351-0.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/os72/protobuf-java-shaded-351/0.9/protobuf-java-shaded-351-0.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.vlkan" name="flatbuffers">
+			<revision name="1.2.0-3f79e055" status="release" pubdate="20151110002614" resolver="public" artresolver="public" homepage="https://github.com/vy/flatbuffers" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache License (v2.0)" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="5830" time="261" location="C:\Users\KolhiziN\.ivy2\cache\com.vlkan\flatbuffers\ivy-1.2.0-3f79e055.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\com.vlkan\flatbuffers\ivy-1.2.0-3f79e055.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="1.2.0-3f79e055" rev-constraint-default="1.2.0-3f79e055" rev-constraint-dynamic="1.2.0-3f79e055" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="flatbuffers" type="jar" ext="jar" status="successful" details="" size="10166" time="599" location="C:\Users\KolhiziN\.ivy2\cache\com.vlkan\flatbuffers\jars\flatbuffers-1.2.0-3f79e055.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.nd4j" name="nd4j-buffer">
+			<revision name="1.0.0-alpha" status="release" pubdate="20180406003238" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3764" time="248" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-buffer\ivy-1.0.0-alpha.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-buffer\ivy-1.0.0-alpha.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/nd4j/nd4j-buffer/1.0.0-alpha/nd4j-buffer-1.0.0-alpha.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-native-api" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="nd4j-buffer" type="jar" ext="jar" status="successful" details="" size="79912" time="862" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-buffer\jars\nd4j-buffer-1.0.0-alpha.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-buffer/1.0.0-alpha/nd4j-buffer-1.0.0-alpha.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.nd4j" name="nd4j-context">
+			<revision name="1.0.0-alpha" status="release" pubdate="20180406003329" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="723" time="252" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-context\ivy-1.0.0-alpha.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-context\ivy-1.0.0-alpha.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/nd4j/nd4j-context/1.0.0-alpha/nd4j-context-1.0.0-alpha.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-buffer" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="nd4j-context" type="jar" ext="jar" status="successful" details="" size="9656" time="522" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-context\jars\nd4j-context-1.0.0-alpha.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-context/1.0.0-alpha/nd4j-context-1.0.0-alpha.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.nd4j" name="nd4j-common">
+			<revision name="1.0.0-alpha" status="release" pubdate="20180406003320" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3466" time="257" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-common\ivy-1.0.0-alpha.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-common\ivy-1.0.0-alpha.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/nd4j/nd4j-common/1.0.0-alpha/nd4j-common-1.0.0-alpha.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-context" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="nd4j-common" type="jar" ext="jar" status="successful" details="" size="219387" time="856" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\nd4j-common\jars\nd4j-common-1.0.0-alpha.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/nd4j-common/1.0.0-alpha/nd4j-common-1.0.0-alpha.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.16.1" status="release" pubdate="20180207094529" resolver="public" artresolver="public" homepage="http://commons.apache.org/proper/commons-compress/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="15636" time="265" location="C:\Users\KolhiziN\.ivy2\cache\org.apache.commons\commons-compress\ivy-1.16.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.apache.commons\commons-compress\ivy-1.16.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-common" conf="compile, runtime" rev="1.16.1" rev-constraint-default="1.16.1" rev-constraint-dynamic="1.16.1" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="commons-compress" type="jar" ext="jar" status="successful" details="" size="559533" time="1011" location="C:\Users\KolhiziN\.ivy2\cache\org.apache.commons\commons-compress\jars\commons-compress-1.16.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.objenesis" name="objenesis">
+			<revision name="2.6" status="release" pubdate="20170620182837" resolver="public" artresolver="public" homepage="http://objenesis.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2783" time="251" location="C:\Users\KolhiziN\.ivy2\cache\org.objenesis\objenesis\ivy-2.6.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.objenesis\objenesis\ivy-2.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.pom"/>
+				<caller organisation="uk.com.robust-it" name="cloning" conf="compile, runtime" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="1.9.3"/>
+				<caller organisation="org.apache.commons" name="commons-compress" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="1.16.1"/>
+				<artifacts>
+					<artifact name="objenesis" type="jar" ext="jar" status="successful" details="" size="55684" time="751" location="C:\Users\KolhiziN\.ivy2\cache\org.objenesis\objenesis\jars\objenesis-2.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.6"/>
+				<caller organisation="uk.com.robust-it" name="cloning" conf="compile, runtime" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="1.9.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.3.1" status="release" pubdate="20140315170434" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10769" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.1/commons-lang3-3.3.1.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-common" conf="compile, runtime" rev="3.3.1" rev-constraint-default="3.3.1" rev-constraint-dynamic="3.3.1" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="412693" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.1/commons-lang3-3.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math3">
+			<revision name="3.4.1" status="release" pubdate="20150108202810" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11367" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.apache.commons\commons-math3\ivy-3.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-common" conf="compile, runtime" rev="3.4.1" rev-constraint-default="3.4.1" rev-constraint-dynamic="3.4.1" callerrev="1.0.0-alpha"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="3.4.1" rev-constraint-default="3.4.1" rev-constraint-dynamic="3.4.1" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="commons-math3" type="jar" ext="jar" status="no" details="" size="2035066" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.apache.commons\commons-math3\jars\commons-math3-3.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.4" status="release" pubdate="20120613022206" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8783" time="0" location="C:\Users\KolhiziN\.ivy2\cache\commons-io\commons-io\ivy-2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-common" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="185140" time="0" location="C:\Users\KolhiziN\.ivy2\cache\commons-io\commons-io\jars\commons-io-2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.reflections" name="reflections">
+			<revision name="0.9.10" status="release" pubdate="20150516124630" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/ronmamo/reflections" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="WTFPL" url="http://www.wtfpl.net/"/>
+				<license name="The New BSD License" url="http://www.opensource.org/licenses/bsd-license.html"/>
+				<metadata-artifact status="no" details="" size="4295" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.reflections\reflections\ivy-0.9.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-common" conf="compile, runtime" rev="0.9.10" rev-constraint-default="0.9.10" rev-constraint-dynamic="0.9.10" callerrev="1.0.0-alpha"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="0.9.10" rev-constraint-default="0.9.10" rev-constraint-dynamic="0.9.10" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="reflections" type="jar" ext="jar" status="no" details="" size="129763" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.18.2-GA" status="release" pubdate="20140527205509" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3235" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.javassist\javassist\ivy-3.18.2-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.pom"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="3.18.2-GA" rev-constraint-default="3.18.2-GA" rev-constraint-dynamic="3.18.2-GA" callerrev="0.9.10"/>
+				<artifacts>
+					<artifact name="javassist" type="bundle" ext="jar" status="no" details="" size="714524" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.2-GA.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.10" status="release" pubdate="20150106231107" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4618" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-common" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="1.0.0-alpha"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="32119" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.nd4j" name="jackson">
+			<revision name="1.0.0-alpha" status="release" pubdate="20180406003301" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="6477" time="247" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\jackson\ivy-1.0.0-alpha.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\jackson\ivy-1.0.0-alpha.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/nd4j/jackson/1.0.0-alpha/jackson-1.0.0-alpha.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-common" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<caller organisation="org.nd4j" name="nd4j-api" conf="compile, runtime" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="jackson" type="jar" ext="jar" status="successful" details="" size="1882001" time="1391" location="C:\Users\KolhiziN\.ivy2\cache\org.nd4j\jackson\jars\jackson-1.0.0-alpha.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/nd4j/jackson/1.0.0-alpha/jackson-1.0.0-alpha.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.2" status="release" pubdate="20130308182346" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://joda-time.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3583" time="0" location="C:\Users\KolhiziN\.ivy2\cache\joda-time\joda-time\ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2.pom"/>
+				<caller organisation="org.nd4j" name="jackson" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="573912" time="0" location="C:\Users\KolhiziN\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.woodstox" name="stax2-api">
+			<revision name="3.1.4" status="release" pubdate="20140228102027" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/WoodstoxStax2" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3513" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.codehaus.woodstox\stax2-api\ivy-3.1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.pom"/>
+				<caller organisation="org.nd4j" name="jackson" conf="compile, runtime" rev="3.1.4" rev-constraint-default="3.1.4" rev-constraint-dynamic="3.1.4" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="stax2-api" type="bundle" ext="jar" status="no" details="" size="161867" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.codehaus.woodstox\stax2-api\bundles\stax2-api-3.1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.12" status="release" pubdate="20130303024606" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache License Version 2.0" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3596" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.yaml\snakeyaml\ivy-1.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12.pom"/>
+				<caller organisation="org.nd4j" name="jackson" conf="compile, runtime" rev="1.12" rev-constraint-default="1.12" rev-constraint-dynamic="1.12" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="bundle" ext="jar" status="no" details="" size="270779" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="mkl-platform">
+			<revision name="2018.1-1.4.1" status="release" pubdate="20180329131355" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="2816" time="261" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl-platform\ivy-2018.1-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl-platform\ivy-2018.1-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl-platform/2018.1-1.4.1/mkl-platform-2018.1-1.4.1.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-native-platform" conf="default, compile, runtime, master" rev="2018.1-1.4.1" rev-constraint-default="2018.1-1.4.1" rev-constraint-dynamic="2018.1-1.4.1" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="mkl-platform" type="jar" ext="jar" status="successful" details="" size="2165" time="654" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl-platform\jars\mkl-platform-2018.1-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl-platform/2018.1-1.4.1/mkl-platform-2018.1-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="mkl">
+			<revision name="2018.1-1.4.1" status="release" pubdate="20180329050453" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="2891" time="250" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl\ivy-2018.1-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl\ivy-2018.1-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1.pom"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="mkl-platform" conf="compile, runtime" rev="2018.1-1.4.1" rev-constraint-default="2018.1-1.4.1" rev-constraint-dynamic="2018.1-1.4.1" callerrev="2018.1-1.4.1"/>
+				<caller organisation="org.nd4j" name="nd4j-native" conf="compile, runtime" rev="2018.1-1.4.1" rev-constraint-default="2018.1-1.4.1" rev-constraint-dynamic="2018.1-1.4.1" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="mkl" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="2747990" time="1767" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl\jars\mkl-2018.1-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-linux-x86.jar"/>
+					</artifact>
+					<artifact name="mkl" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="3303988" time="1415" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl\jars\mkl-2018.1-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="mkl" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="1537523" time="841" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl\jars\mkl-2018.1-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="mkl" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="2570648" time="1227" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl\jars\mkl-2018.1-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="mkl" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="2367578" time="1125" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl\jars\mkl-2018.1-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="mkl" type="jar" ext="jar" status="successful" details="" size="198742" time="353" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\mkl\jars\mkl-2018.1-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="openblas-platform">
+			<revision name="0.2.20-1.4.1" status="release" pubdate="20180329131230" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="4805" time="269" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas-platform\ivy-0.2.20-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas-platform\ivy-0.2.20-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas-platform/0.2.20-1.4.1/openblas-platform-0.2.20-1.4.1.pom"/>
+				<caller organisation="org.nd4j" name="nd4j-native-platform" conf="default, compile, runtime, master" rev="0.2.20-1.4.1" rev-constraint-default="0.2.20-1.4.1" rev-constraint-dynamic="0.2.20-1.4.1" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="openblas-platform" type="jar" ext="jar" status="successful" details="" size="2277" time="629" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas-platform\jars\openblas-platform-0.2.20-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas-platform/0.2.20-1.4.1/openblas-platform-0.2.20-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="openblas">
+			<revision name="0.2.20-1.4.1" status="release" pubdate="20180329045248" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="3701" time="248" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\ivy-0.2.20-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\ivy-0.2.20-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1.pom"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="openblas-platform" conf="compile, runtime" rev="0.2.20-1.4.1" rev-constraint-default="0.2.20-1.4.1" rev-constraint-dynamic="0.2.20-1.4.1" callerrev="0.2.20-1.4.1"/>
+				<caller organisation="org.nd4j" name="nd4j-native" conf="compile, runtime" rev="0.2.20-1.4.1" rev-constraint-default="0.2.20-1.4.1" rev-constraint-dynamic="0.2.20-1.4.1" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="android-x86_64" status="successful" details="" size="1340731" time="1350" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-android-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-android-x86_64.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="8767988" time="3495" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-linux-x86.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="12440636" time="4254" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="android-arm64" status="successful" details="" size="708119" time="488" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-android-arm64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-android-arm64.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="ios-arm64" status="successful" details="" size="591512" time="454" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-ios-arm64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-ios-arm64.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="9104610" time="2442" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="12195648" time="2638" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="13086085" time="2497" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="linux-ppc64le" status="successful" details="" size="7322088" time="2936" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-linux-ppc64le.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-linux-ppc64le.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="android-arm" status="successful" details="" size="649211" time="530" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-android-arm.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-android-arm.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="linux-armhf" status="successful" details="" size="5845396" time="1966" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-linux-armhf.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-linux-armhf.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" status="successful" details="" size="122653" time="282" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="" status="no" details="" size="122653" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="android-x86" status="successful" details="" size="1070501" time="474" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-android-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-android-x86.jar"/>
+					</artifact>
+					<artifact name="openblas" type="jar" ext="jar" extra-classifier="ios-x86_64" status="successful" details="" size="1211873" time="512" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\openblas\jars\openblas-0.2.20-1.4.1-ios-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-ios-x86_64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco" name="javacpp">
+			<revision name="1.4.1" status="release" pubdate="20180328140906" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://bytedeco.org/javacpp/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="no" details="" size="4060" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacpp\ivy-1.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp/1.4.1/javacpp-1.4.1.pom"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="openblas" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.2.20-1.4.1"/>
+				<caller organisation="org.nd4j" name="nd4j-native-api" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.0.0-alpha"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="mkl" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="2018.1-1.4.1"/>
+				<caller organisation="org.nd4j" name="nd4j-buffer" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.0.0-alpha"/>
+				<caller organisation="org.nd4j" name="nd4j-native" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.0.0-alpha"/>
+				<artifacts>
+					<artifact name="javacpp" type="jar" ext="jar" status="no" details="" size="352202" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacpp\jars\javacpp-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp/1.4.1/javacpp-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.6" status="release" pubdate="20180427114006" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.6/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2501" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom"/>
+				<caller organisation="default" name="t06_sbt_nd4s_2.12" conf="compile-internal, compile, provided, optional" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5267302" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.6.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.nd4j" name="nd4s_2.12">
+			<revision name="1.0.0-alpha" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="default" name="t06_sbt_nd4s_2.12" conf="compile-internal, compile, provided, optional" rev="1.0.0-alpha" rev-constraint-default="1.0.0-alpha" rev-constraint-dynamic="1.0.0-alpha" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

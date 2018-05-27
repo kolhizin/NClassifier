@@ -31,6 +31,15 @@ class LayerFC(input_size: Int, output_size: Int){
     dY * beta
   }
 }
+class LogitActivation{
+  def forward(X: DenseMatrix[Double]) : DenseMatrix[Double] = {
+    1.0 / (breeze.numerics.exp(-X) + 1.0)
+  }
+  def backward_dx(dY: DenseMatrix[Double], X: DenseMatrix[Double]) : DenseMatrix[Double] = {
+    val p = forward(X)
+    dY * p * (1 - p)
+  }
+}
 
 //this is bad design -- restricts you on sample-update
 class LossFunc(y: DenseVector[Double]){
@@ -50,6 +59,16 @@ class LossFuncM(y: DenseMatrix[Double]){
   }
   def backward_dx(X: DenseMatrix[Double]) : DenseMatrix[Double] = {
     2.0 * (X - y)
+  }
+}
+
+class LossFuncL(y: DenseVector[Double]){
+  def forward(X: DenseMatrix[Double]) : Double = {
+    val diff = (X.toDenseVector - y)
+    diff dot diff
+  }
+  def backward_dx(X: DenseMatrix[Double]) : DenseMatrix[Double] = {
+    2.0 * (X - y.toDenseMatrix.t)
   }
 }
 
@@ -146,6 +165,8 @@ object LinReg extends App{
   val (t3x2x, t3x2y) = makeSample3x2(20)
   val t3x2fc = makeFC3x2
   runTest(t3x2x, t3x2y, t3x2fc, 100)
+
+
 
   println("Done")
 }
