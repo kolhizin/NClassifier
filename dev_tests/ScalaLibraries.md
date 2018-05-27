@@ -1,4 +1,12 @@
+# GUI
+
+**ScalaFX** is hard to understand due to non-existent documentation. Some things seems like easy, some are pretty complicated. Developed GUI in C# instead.
+
+# Image processing
+
 **OpenCV** (through javacv) support is oustandingly awful! It is easier to write native code than to try something in Scala. Won't use OpenCV as of now.
+
+# Linear Algebra
 
 **Breeze** is actually pretty nice (except for Vector vs Matrix), but lacks Tensor support. This makes Breeze unusable for purpose of image processing (convolution would require use of 3-/4-Tensors or even higher).
 
