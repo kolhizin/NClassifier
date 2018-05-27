@@ -31,6 +31,26 @@ namespace ManualImageObjectSelector
             if (result.observations.ContainsKey(fk))
                 lstBs.DataSource = result.observations[fk];
         }
+        private Image loadImage()
+        {
+            string fname = in_fnames[cur_index];
+            Image res = Image.FromFile(fname);
+            foreach (var prop in res.PropertyItems)
+            {
+                if (prop.Id == 0x112)
+                {
+                    if (prop.Value[0] == 0x08)
+                        res.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                    else if (prop.Value[0] == 0x03)
+                        res.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                    else if (prop.Value[0] == 0x06)
+                        res.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                    else if (prop.Value[0] != 0x01)
+                        MessageBox.Show("Unkonwn image orientation!", "Warning!");
+                }
+            }
+            return res;
+        }
         private void setImage(int idx)
         {
             if (chkSaveNext.Checked)
@@ -41,7 +61,7 @@ namespace ManualImageObjectSelector
                 return;
             }
             cur_index = idx;
-            pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+            pbMain.Image = loadImage();
             txtCurIndex.Text = (cur_index + 1).ToString();
             updateLabelsView();
         }
@@ -55,7 +75,7 @@ namespace ManualImageObjectSelector
                 return;
             }
             cur_index += 1;
-            pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+            pbMain.Image = loadImage();
             txtCurIndex.Text = (cur_index + 1).ToString();
             updateLabelsView();
         }

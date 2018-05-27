@@ -9,6 +9,7 @@ namespace ManualImageObjectSelector
     class ImageRegionInfo
     {
         public string imgName; //local name only filename without path
+        public bool isValidObs = true;
         public LinkedList<OrientedRect> regions;
         
         public void remove(int idx)

@@ -41,6 +41,7 @@ namespace ManualImageObjectSelector
             int num = cur_regions.regions.Count;
             for(int i = 0; i < num; i++)
                 lstRegions.Items.Add(i + 1);
+            chkValidObs.Checked = cur_regions.isValidObs;
             pbMain.Invalidate();
         }
         private void resetCurRegionInfo(string imgName)
@@ -107,6 +108,26 @@ namespace ManualImageObjectSelector
                 result = new Dictionary<string, ImageRegionInfo>();
             }
         }
+        private Image loadImage()
+        {
+            string fname = in_fnames[cur_index];
+            Image res = Image.FromFile(fname);
+            foreach(var prop in res.PropertyItems)
+            {
+                if(prop.Id == 0x112)
+                {
+                    if (prop.Value[0] == 0x08)
+                        res.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                    else if (prop.Value[0] == 0x03)
+                        res.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                    else if (prop.Value[0] == 0x06)
+                        res.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                    else if (prop.Value[0] != 0x01)
+                        MessageBox.Show("Unkonwn image orientation!", "Warning!");
+                }
+            }
+            return res;
+        }
         private void setMainImage(int idx)
         {
             if (idx >= in_fnames.Length || idx < 0)
@@ -115,7 +136,7 @@ namespace ManualImageObjectSelector
                 return;
             }
             cur_index = idx;
-            pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+            pbMain.Image = loadImage();
             txtCurIndex.Text = (cur_index + 1).ToString();
             loadOrCreateImageRegion(in_fnames[cur_index]);
         }
@@ -127,7 +148,7 @@ namespace ManualImageObjectSelector
                 return;
             }
             cur_index += 1;
-            pbMain.Image = Image.FromFile(in_fnames[cur_index]);
+            pbMain.Image = loadImage();
             txtCurIndex.Text = (cur_index + 1).ToString();
             loadOrCreateImageRegion(in_fnames[cur_index]);
         }
@@ -191,6 +212,11 @@ namespace ManualImageObjectSelector
                 updateCurrentOrientation(1.0f, -1.0f);
             if (e.KeyCode == Keys.R)
                 selectionModeOrientation = !selectionModeOrientation;
+            if (e.KeyCode == Keys.V)
+            {
+                cur_regions.isValidObs = !cur_regions.isValidObs;
+                chkValidObs.Checked = cur_regions.isValidObs;
+            }
         }
 
         private PointF getTransformCoef()
@@ -387,6 +413,11 @@ namespace ManualImageObjectSelector
                 e.Handled = true;
                 e.SuppressKeyPress = true;
             }
+        }
+
+        private void chkValidObs_CheckedChanged(object sender, EventArgs e)
+        {
+            cur_regions.isValidObs = chkValidObs.Checked;
         }
     }
 }

@@ -4,7 +4,7 @@
 		module="t04_load_img-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180525194708"
+		publication="20180526000253"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

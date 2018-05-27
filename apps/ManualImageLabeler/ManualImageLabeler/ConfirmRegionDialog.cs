@@ -15,7 +15,9 @@ namespace ManualImageObjectSelector
         public ConfirmRegionDialog(Image img, OrientedRect rect)
         {            
             InitializeComponent();
-            float srcAspect = ((float)img.Width * rect.w) / ((float)img.Height * rect.h);
+            float rW = Math.Abs(rect.dir.X) * (float)img.Height + Math.Abs(rect.dir.Y) * (float)img.Width;
+            float rH = Math.Abs(rect.dir.X) * (float)img.Width + Math.Abs(rect.dir.Y) * (float)img.Height;
+            float srcAspect = (rect.w * rW) / (rect.h * rH);
             float dstAspect = (float)picBox.ClientSize.Width / (float)picBox.ClientSize.Height;
             int w = 0;
             int h = 0;

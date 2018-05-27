@@ -16,11 +16,6 @@ D:\Programming\NClassifier\apps\ManualImageObjectSelector\ManualImageObjectSelec
 d:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageObjectSelector\bin\Debug\ManualImageObjectSelector.exe.config
 d:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.exe
 d:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageObjectSelector\obj\Debug\ManualImageObjectSelector.pdb
-D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\bin\Debug\ManualImageObjectSelector.exe.config
-D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageObjectSelector.exe
-D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageObjectSelector.pdb
-D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\bin\Debug\ManualImageObjectSelector.exe
-D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\bin\Debug\ManualImageObjectSelector.pdb
 D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\bin\Debug\Newtonsoft.Json.dll
 D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\bin\Debug\Newtonsoft.Json.xml
 D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageLabeler.csprojResolveAssemblyReference.cache
@@ -28,6 +23,11 @@ D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\
 D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageObjectSelector.ConfirmRegionDialog.resources
 D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageObjectSelector.ImageClassifier.resources
 D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageObjectSelector.ImageSelector.resources
-D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageObjectSelector.Properties.Resources.resources
 D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageObjectSelector.SetUp.resources
 D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageLabeler.csproj.GenerateResource.Cache
+D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\bin\Debug\ManualImageLabeler.exe.config
+D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\bin\Debug\ManualImageLabeler.exe
+D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\bin\Debug\ManualImageLabeler.pdb
+D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageLabeler.Properties.Resources.resources
+D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageLabeler.exe
+D:\Programming\NClassifier\apps\ManualImageLabeler\ManualImageLabeler\obj\Debug\ManualImageLabeler.pdb

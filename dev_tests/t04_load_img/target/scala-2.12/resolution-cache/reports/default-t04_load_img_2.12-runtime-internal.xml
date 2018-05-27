@@ -7,24 +7,727 @@
 		revision="0.1"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20180525195839"/>
+		date="20180526103958"/>
 	<dependencies>
-		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.12.4" status="release" pubdate="20171011100456" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
-				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2501" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.pom"/>
-				<caller organisation="default" name="t04_load_img_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.1"/>
+		<module organisation="org.bytedeco" name="javacv-platform">
+			<revision name="1.4.1" status="release" pubdate="20180329134027" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="4938" time="269" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacv-platform\ivy-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacv-platform\ivy-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacv-platform/1.4.1/javacv-platform-1.4.1.pom"/>
+				<caller organisation="default" name="t04_load_img_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5247152" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.4.jar">
+					<artifact name="javacv-platform" type="jar" ext="jar" status="successful" details="" size="2363" time="698" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacv-platform\jars\javacv-platform-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacv-platform/1.4.1/javacv-platform-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="flandmark-platform">
+			<revision name="1.07-1.4.1" status="release" pubdate="20180329131233" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="4528" time="291" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark-platform\ivy-1.07-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark-platform\ivy-1.07-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark-platform/1.07-1.4.1/flandmark-platform-1.07-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="1.07-1.4.1" rev-constraint-default="1.07-1.4.1" rev-constraint-dynamic="1.07-1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="flandmark-platform" type="jar" ext="jar" status="successful" details="" size="2277" time="687" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark-platform\jars\flandmark-platform-1.07-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark-platform/1.07-1.4.1/flandmark-platform-1.07-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="artoolkitplus-platform">
+			<revision name="2.3.1-1.4.1" status="release" pubdate="20180329131314" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="4348" time="256" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus-platform\ivy-2.3.1-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus-platform\ivy-2.3.1-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus-platform/2.3.1-1.4.1/artoolkitplus-platform-2.3.1-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="2.3.1-1.4.1" rev-constraint-default="2.3.1-1.4.1" rev-constraint-dynamic="2.3.1-1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="artoolkitplus-platform" type="jar" ext="jar" status="successful" details="" size="2319" time="685" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus-platform\jars\artoolkitplus-platform-2.3.1-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus-platform/2.3.1-1.4.1/artoolkitplus-platform-2.3.1-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="videoinput-platform">
+			<revision name="0.200-1.4.1" status="release" pubdate="20180329132512" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="2015" time="272" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\videoinput-platform\ivy-0.200-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\videoinput-platform\ivy-0.200-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/videoinput-platform/0.200-1.4.1/videoinput-platform-0.200-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="0.200-1.4.1" rev-constraint-default="0.200-1.4.1" rev-constraint-dynamic="0.200-1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="videoinput-platform" type="jar" ext="jar" status="successful" details="" size="2168" time="675" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\videoinput-platform\jars\videoinput-platform-0.200-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/videoinput-platform/0.200-1.4.1/videoinput-platform-0.200-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="librealsense-platform">
+			<revision name="1.12.1-1.4.1" status="release" pubdate="20180329131309" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="2843" time="258" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense-platform\ivy-1.12.1-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense-platform\ivy-1.12.1-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/librealsense-platform/1.12.1-1.4.1/librealsense-platform-1.12.1-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="1.12.1-1.4.1" rev-constraint-default="1.12.1-1.4.1" rev-constraint-dynamic="1.12.1-1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="librealsense-platform" type="jar" ext="jar" status="successful" details="" size="2231" time="312" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense-platform\jars\librealsense-platform-1.12.1-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/librealsense-platform/1.12.1-1.4.1/librealsense-platform-1.12.1-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="libfreenect2-platform">
+			<revision name="0.2.0-1.4.1" status="release" pubdate="20180329132514" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="2568" time="249" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2-platform\ivy-0.2.0-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2-platform\ivy-0.2.0-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect2-platform/0.2.0-1.4.1/libfreenect2-platform-0.2.0-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="0.2.0-1.4.1" rev-constraint-default="0.2.0-1.4.1" rev-constraint-dynamic="0.2.0-1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="libfreenect2-platform" type="jar" ext="jar" status="successful" details="" size="2220" time="620" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2-platform\jars\libfreenect2-platform-0.2.0-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect2-platform/0.2.0-1.4.1/libfreenect2-platform-0.2.0-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="libfreenect-platform">
+			<revision name="0.5.3-1.4.1" status="release" pubdate="20180329131333" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="3389" time="256" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect-platform\ivy-0.5.3-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect-platform\ivy-0.5.3-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect-platform/0.5.3-1.4.1/libfreenect-platform-0.5.3-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="0.5.3-1.4.1" rev-constraint-default="0.5.3-1.4.1" rev-constraint-dynamic="0.5.3-1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="libfreenect-platform" type="jar" ext="jar" status="successful" details="" size="2261" time="677" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect-platform\jars\libfreenect-platform-0.5.3-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect-platform/0.5.3-1.4.1/libfreenect-platform-0.5.3-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="libdc1394-platform">
+			<revision name="2.2.5-1.4.1" status="release" pubdate="20180329131311" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="3383" time="260" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394-platform\ivy-2.2.5-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394-platform\ivy-2.2.5-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394-platform/2.2.5-1.4.1/libdc1394-platform-2.2.5-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="2.2.5-1.4.1" rev-constraint-default="2.2.5-1.4.1" rev-constraint-dynamic="2.2.5-1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="libdc1394-platform" type="jar" ext="jar" status="successful" details="" size="2253" time="735" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394-platform\jars\libdc1394-platform-2.2.5-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394-platform/2.2.5-1.4.1/libdc1394-platform-2.2.5-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="flycapture-platform">
+			<revision name="2.11.3.121-1.4.1" status="release" pubdate="20180329131320" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="2837" time="258" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture-platform\ivy-2.11.3.121-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture-platform\ivy-2.11.3.121-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flycapture-platform/2.11.3.121-1.4.1/flycapture-platform-2.11.3.121-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="2.11.3.121-1.4.1" rev-constraint-default="2.11.3.121-1.4.1" rev-constraint-dynamic="2.11.3.121-1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="flycapture-platform" type="jar" ext="jar" status="successful" details="" size="2233" time="722" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture-platform\jars\flycapture-platform-2.11.3.121-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flycapture-platform/2.11.3.121-1.4.1/flycapture-platform-2.11.3.121-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="ffmpeg-platform">
+			<revision name="3.4.2-1.4.1" status="release" pubdate="20180329131245" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="4327" time="254" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg-platform\ivy-3.4.2-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg-platform\ivy-3.4.2-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg-platform/3.4.2-1.4.1/ffmpeg-platform-3.4.2-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="3.4.2-1.4.1" rev-constraint-default="3.4.2-1.4.1" rev-constraint-dynamic="3.4.2-1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="ffmpeg-platform" type="jar" ext="jar" status="successful" details="" size="2245" time="655" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg-platform\jars\ffmpeg-platform-3.4.2-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg-platform/3.4.2-1.4.1/ffmpeg-platform-3.4.2-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="opencv-platform">
+			<revision name="3.4.1-1.4.1" status="release" pubdate="20180329131257" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="4798" time="259" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv-platform\ivy-3.4.1-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv-platform\ivy-3.4.1-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv-platform/3.4.1-1.4.1/opencv-platform-3.4.1-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="3.4.1-1.4.1" rev-constraint-default="3.4.1-1.4.1" rev-constraint-dynamic="3.4.1-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="flandmark-platform" conf="compile, runtime" rev="3.4.1-1.4.1" rev-constraint-default="3.4.1-1.4.1" rev-constraint-dynamic="3.4.1-1.4.1" callerrev="1.07-1.4.1"/>
+				<artifacts>
+					<artifact name="opencv-platform" type="jar" ext="jar" status="successful" details="" size="2250" time="688" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv-platform\jars\opencv-platform-3.4.1-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv-platform/3.4.1-1.4.1/opencv-platform-3.4.1-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco" name="javacv">
+			<revision name="1.4.1" status="release" pubdate="20180329132836" resolver="public" artresolver="public" homepage="http://bytedeco.org/javacv/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="11575" time="277" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacv\ivy-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacv\ivy-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacv/1.4.1/javacv-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv-platform" conf="default, compile, runtime, master" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="javacv" type="jar" ext="jar" status="successful" details="" size="393255" time="1053" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacv\jars\javacv-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacv/1.4.1/javacv-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="flandmark">
+			<revision name="1.07-1.4.1" status="release" pubdate="20180329020749" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="4374" time="246" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\ivy-1.07-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\ivy-1.07-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="1.07-1.4.1" rev-constraint-default="1.07-1.4.1" rev-constraint-dynamic="1.07-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="flandmark-platform" conf="compile, runtime" rev="1.07-1.4.1" rev-constraint-default="1.07-1.4.1" rev-constraint-dynamic="1.07-1.4.1" callerrev="1.07-1.4.1"/>
+				<artifacts>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="44147" time="820" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" status="successful" details="" size="11804" time="248" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="linux-armhf" status="successful" details="" size="38643" time="330" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-linux-armhf.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-linux-armhf.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="android-arm" status="successful" details="" size="40348" time="367" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-android-arm.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-android-arm.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="android-x86" status="successful" details="" size="46154" time="313" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-android-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-android-x86.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="45142" time="320" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-linux-x86.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="android-x86_64" status="successful" details="" size="45141" time="381" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-android-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-android-x86_64.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="45384" time="318" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="linux-ppc64le" status="successful" details="" size="49257" time="299" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-linux-ppc64le.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-linux-ppc64le.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="35618" time="306" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="45901" time="290" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="flandmark" type="jar" ext="jar" extra-classifier="android-arm64" status="successful" details="" size="43097" time="309" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flandmark\jars\flandmark-1.07-1.4.1-android-arm64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flandmark/1.07-1.4.1/flandmark-1.07-1.4.1-android-arm64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="artoolkitplus">
+			<revision name="2.3.1-1.4.1" status="release" pubdate="20180329020401" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="1983" time="255" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\ivy-2.3.1-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\ivy-2.3.1-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="2.3.1-1.4.1" rev-constraint-default="2.3.1-1.4.1" rev-constraint-dynamic="2.3.1-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="artoolkitplus-platform" conf="compile, runtime" rev="2.3.1-1.4.1" rev-constraint-default="2.3.1-1.4.1" rev-constraint-dynamic="2.3.1-1.4.1" callerrev="2.3.1-1.4.1"/>
+				<artifacts>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="linux-ppc64le" status="successful" details="" size="197830" time="830" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-linux-ppc64le.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-linux-ppc64le.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="128343" time="450" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="android-x86" status="successful" details="" size="404875" time="638" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-android-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-android-x86.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="178478" time="341" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="164156" time="347" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-linux-x86.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="162356" time="372" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" status="successful" details="" size="24090" time="249" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="linux-armhf" status="successful" details="" size="146997" time="325" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-linux-armhf.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-linux-armhf.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="android-arm" status="successful" details="" size="315902" time="367" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-android-arm.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-android-arm.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="179465" time="337" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="android-arm64" status="successful" details="" size="378936" time="363" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-android-arm64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-android-arm64.jar"/>
+					</artifact>
+					<artifact name="artoolkitplus" type="jar" ext="jar" extra-classifier="android-x86_64" status="successful" details="" size="399148" time="330" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\artoolkitplus\jars\artoolkitplus-2.3.1-1.4.1-android-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4.1/artoolkitplus-2.3.1-1.4.1-android-x86_64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="videoinput">
+			<revision name="0.200-1.4.1" status="release" pubdate="20180328232729" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="2712" time="268" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\videoinput\ivy-0.200-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\videoinput\ivy-0.200-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/videoinput/0.200-1.4.1/videoinput-0.200-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="0.200-1.4.1" rev-constraint-default="0.200-1.4.1" rev-constraint-dynamic="0.200-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="videoinput-platform" conf="compile, runtime" rev="0.200-1.4.1" rev-constraint-default="0.200-1.4.1" rev-constraint-dynamic="0.200-1.4.1" callerrev="0.200-1.4.1"/>
+				<artifacts>
+					<artifact name="videoinput" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="116798" time="897" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\videoinput\jars\videoinput-0.200-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/videoinput/0.200-1.4.1/videoinput-0.200-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="videoinput" type="jar" ext="jar" status="successful" details="" size="16914" time="253" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\videoinput\jars\videoinput-0.200-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/videoinput/0.200-1.4.1/videoinput-0.200-1.4.1.jar"/>
+					</artifact>
+					<artifact name="videoinput" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="99077" time="329" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\videoinput\jars\videoinput-0.200-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/videoinput/0.200-1.4.1/videoinput-0.200-1.4.1-windows-x86.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="librealsense">
+			<revision name="1.12.1-1.4.1" status="release" pubdate="20180329013147" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="1919" time="246" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense\ivy-1.12.1-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense\ivy-1.12.1-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/librealsense/1.12.1-1.4.1/librealsense-1.12.1-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="1.12.1-1.4.1" rev-constraint-default="1.12.1-1.4.1" rev-constraint-dynamic="1.12.1-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="librealsense-platform" conf="compile, runtime" rev="1.12.1-1.4.1" rev-constraint-default="1.12.1-1.4.1" rev-constraint-dynamic="1.12.1-1.4.1" callerrev="1.12.1-1.4.1"/>
+				<artifacts>
+					<artifact name="librealsense" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="770269" time="988" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense\jars\librealsense-1.12.1-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/librealsense/1.12.1-1.4.1/librealsense-1.12.1-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="librealsense" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="473604" time="442" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense\jars\librealsense-1.12.1-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/librealsense/1.12.1-1.4.1/librealsense-1.12.1-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="librealsense" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="506139" time="567" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense\jars\librealsense-1.12.1-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/librealsense/1.12.1-1.4.1/librealsense-1.12.1-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="librealsense" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="465023" time="450" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense\jars\librealsense-1.12.1-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/librealsense/1.12.1-1.4.1/librealsense-1.12.1-1.4.1-linux-x86.jar"/>
+					</artifact>
+					<artifact name="librealsense" type="jar" ext="jar" status="successful" details="" size="49557" time="321" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense\jars\librealsense-1.12.1-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/librealsense/1.12.1-1.4.1/librealsense-1.12.1-1.4.1.jar"/>
+					</artifact>
+					<artifact name="librealsense" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="923066" time="517" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\librealsense\jars\librealsense-1.12.1-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/librealsense/1.12.1-1.4.1/librealsense-1.12.1-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="libfreenect2">
+			<revision name="0.2.0-1.4.1" status="release" pubdate="20180329012502" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="1981" time="251" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2\ivy-0.2.0-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2\ivy-0.2.0-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect2/0.2.0-1.4.1/libfreenect2-0.2.0-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="0.2.0-1.4.1" rev-constraint-default="0.2.0-1.4.1" rev-constraint-dynamic="0.2.0-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="libfreenect2-platform" conf="compile, runtime" rev="0.2.0-1.4.1" rev-constraint-default="0.2.0-1.4.1" rev-constraint-dynamic="0.2.0-1.4.1" callerrev="0.2.0-1.4.1"/>
+				<artifacts>
+					<artifact name="libfreenect2" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="505096" time="854" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2\jars\libfreenect2-0.2.0-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect2/0.2.0-1.4.1/libfreenect2-0.2.0-1.4.1-linux-x86.jar"/>
+					</artifact>
+					<artifact name="libfreenect2" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="375331" time="686" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2\jars\libfreenect2-0.2.0-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect2/0.2.0-1.4.1/libfreenect2-0.2.0-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="libfreenect2" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="972866" time="576" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2\jars\libfreenect2-0.2.0-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect2/0.2.0-1.4.1/libfreenect2-0.2.0-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="libfreenect2" type="jar" ext="jar" status="successful" details="" size="24461" time="264" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2\jars\libfreenect2-0.2.0-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect2/0.2.0-1.4.1/libfreenect2-0.2.0-1.4.1.jar"/>
+					</artifact>
+					<artifact name="libfreenect2" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="531639" time="420" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect2\jars\libfreenect2-0.2.0-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect2/0.2.0-1.4.1/libfreenect2-0.2.0-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="libfreenect">
+			<revision name="0.5.3-1.4.1" status="release" pubdate="20180329011557" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="1979" time="250" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\ivy-0.5.3-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\ivy-0.5.3-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4.1/libfreenect-0.5.3-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="0.5.3-1.4.1" rev-constraint-default="0.5.3-1.4.1" rev-constraint-dynamic="0.5.3-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="libfreenect-platform" conf="compile, runtime" rev="0.5.3-1.4.1" rev-constraint-default="0.5.3-1.4.1" rev-constraint-dynamic="0.5.3-1.4.1" callerrev="0.5.3-1.4.1"/>
+				<artifacts>
+					<artifact name="libfreenect" type="jar" ext="jar" extra-classifier="linux-ppc64le" status="successful" details="" size="229931" time="1002" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\jars\libfreenect-0.5.3-1.4.1-linux-ppc64le.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4.1/libfreenect-0.5.3-1.4.1-linux-ppc64le.jar"/>
+					</artifact>
+					<artifact name="libfreenect" type="jar" ext="jar" status="successful" details="" size="21956" time="271" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\jars\libfreenect-0.5.3-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4.1/libfreenect-0.5.3-1.4.1.jar"/>
+					</artifact>
+					<artifact name="libfreenect" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="212466" time="394" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\jars\libfreenect-0.5.3-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4.1/libfreenect-0.5.3-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="libfreenect" type="jar" ext="jar" extra-classifier="linux-armhf" status="successful" details="" size="113303" time="364" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\jars\libfreenect-0.5.3-1.4.1-linux-armhf.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4.1/libfreenect-0.5.3-1.4.1-linux-armhf.jar"/>
+					</artifact>
+					<artifact name="libfreenect" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="178635" time="360" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\jars\libfreenect-0.5.3-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4.1/libfreenect-0.5.3-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="libfreenect" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="108307" time="402" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\jars\libfreenect-0.5.3-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4.1/libfreenect-0.5.3-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="libfreenect" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="205695" time="347" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\jars\libfreenect-0.5.3-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4.1/libfreenect-0.5.3-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="libfreenect" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="194464" time="325" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libfreenect\jars\libfreenect-0.5.3-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4.1/libfreenect-0.5.3-1.4.1-linux-x86.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="libdc1394">
+			<revision name="2.2.5-1.4.1" status="release" pubdate="20180329010634" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="3001" time="278" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\ivy-2.2.5-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\ivy-2.2.5-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4.1/libdc1394-2.2.5-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="2.2.5-1.4.1" rev-constraint-default="2.2.5-1.4.1" rev-constraint-dynamic="2.2.5-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="libdc1394-platform" conf="compile, runtime" rev="2.2.5-1.4.1" rev-constraint-default="2.2.5-1.4.1" rev-constraint-dynamic="2.2.5-1.4.1" callerrev="2.2.5-1.4.1"/>
+				<artifacts>
+					<artifact name="libdc1394" type="jar" ext="jar" extra-classifier="linux-ppc64le" status="successful" details="" size="156508" time="775" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\jars\libdc1394-2.2.5-1.4.1-linux-ppc64le.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4.1/libdc1394-2.2.5-1.4.1-linux-ppc64le.jar"/>
+					</artifact>
+					<artifact name="libdc1394" type="jar" ext="jar" status="successful" details="" size="30802" time="334" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\jars\libdc1394-2.2.5-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4.1/libdc1394-2.2.5-1.4.1.jar"/>
+					</artifact>
+					<artifact name="libdc1394" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="181708" time="392" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\jars\libdc1394-2.2.5-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4.1/libdc1394-2.2.5-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="libdc1394" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="162097" time="373" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\jars\libdc1394-2.2.5-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4.1/libdc1394-2.2.5-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="libdc1394" type="jar" ext="jar" extra-classifier="linux-armhf" status="successful" details="" size="133226" time="307" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\jars\libdc1394-2.2.5-1.4.1-linux-armhf.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4.1/libdc1394-2.2.5-1.4.1-linux-armhf.jar"/>
+					</artifact>
+					<artifact name="libdc1394" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="199341" time="361" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\jars\libdc1394-2.2.5-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4.1/libdc1394-2.2.5-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="libdc1394" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="188292" time="417" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\jars\libdc1394-2.2.5-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4.1/libdc1394-2.2.5-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="libdc1394" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="149451" time="411" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\libdc1394\jars\libdc1394-2.2.5-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4.1/libdc1394-2.2.5-1.4.1-linux-x86.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="flycapture">
+			<revision name="2.11.3.121-1.4.1" status="release" pubdate="20180329005642" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="2057" time="245" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture\ivy-2.11.3.121-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture\ivy-2.11.3.121-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flycapture/2.11.3.121-1.4.1/flycapture-2.11.3.121-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="2.11.3.121-1.4.1" rev-constraint-default="2.11.3.121-1.4.1" rev-constraint-dynamic="2.11.3.121-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="flycapture-platform" conf="compile, runtime" rev="2.11.3.121-1.4.1" rev-constraint-default="2.11.3.121-1.4.1" rev-constraint-dynamic="2.11.3.121-1.4.1" callerrev="2.11.3.121-1.4.1"/>
+				<artifacts>
+					<artifact name="flycapture" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="252312" time="901" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture\jars\flycapture-2.11.3.121-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flycapture/2.11.3.121-1.4.1/flycapture-2.11.3.121-1.4.1-linux-x86.jar"/>
+					</artifact>
+					<artifact name="flycapture" type="jar" ext="jar" extra-classifier="linux-armhf" status="successful" details="" size="206822" time="441" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture\jars\flycapture-2.11.3.121-1.4.1-linux-armhf.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flycapture/2.11.3.121-1.4.1/flycapture-2.11.3.121-1.4.1-linux-armhf.jar"/>
+					</artifact>
+					<artifact name="flycapture" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="274856" time="433" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture\jars\flycapture-2.11.3.121-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flycapture/2.11.3.121-1.4.1/flycapture-2.11.3.121-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="flycapture" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="167021" time="446" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture\jars\flycapture-2.11.3.121-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flycapture/2.11.3.121-1.4.1/flycapture-2.11.3.121-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="flycapture" type="jar" ext="jar" status="successful" details="" size="134509" time="341" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture\jars\flycapture-2.11.3.121-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flycapture/2.11.3.121-1.4.1/flycapture-2.11.3.121-1.4.1.jar"/>
+					</artifact>
+					<artifact name="flycapture" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="216404" time="396" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\flycapture\jars\flycapture-2.11.3.121-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/flycapture/2.11.3.121-1.4.1/flycapture-2.11.3.121-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="ffmpeg">
+			<revision name="3.4.2-1.4.1" status="release" pubdate="20180329011523" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="2456" time="247" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\ivy-3.4.2-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\ivy-3.4.2-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="3.4.2-1.4.1" rev-constraint-default="3.4.2-1.4.1" rev-constraint-dynamic="3.4.2-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="ffmpeg-platform" conf="compile, runtime" rev="3.4.2-1.4.1" rev-constraint-default="3.4.2-1.4.1" rev-constraint-dynamic="3.4.2-1.4.1" callerrev="3.4.2-1.4.1"/>
+				<artifacts>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="android-x86" status="successful" details="" size="12854037" time="4784" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-android-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-android-x86.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="android-arm64" status="successful" details="" size="13237518" time="1779" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-android-arm64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-android-arm64.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="linux-ppc64le" status="successful" details="" size="14273108" time="3086" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-linux-ppc64le.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-linux-ppc64le.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" status="successful" details="" size="241819" time="301" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="android-x86_64" status="successful" details="" size="12667465" time="2332" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-android-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-android-x86_64.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="14161357" time="2675" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="13729297" time="6903" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="linux-armhf" status="successful" details="" size="11705922" time="4072" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-linux-armhf.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-linux-armhf.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="13250389" time="2668" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="12538998" time="4677" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="12461068" time="3679" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-linux-x86.jar"/>
+					</artifact>
+					<artifact name="ffmpeg" type="jar" ext="jar" extra-classifier="android-arm" status="successful" details="" size="12878114" time="3359" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\ffmpeg\jars\ffmpeg-3.4.2-1.4.1-android-arm.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/ffmpeg/3.4.2-1.4.1/ffmpeg-3.4.2-1.4.1-android-arm.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco.javacpp-presets" name="opencv">
+			<revision name="3.4.1-1.4.1" status="release" pubdate="20180329084928" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="5521" time="256" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\ivy-3.4.1-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\ivy-3.4.1-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1.pom"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="3.4.1-1.4.1" rev-constraint-default="3.4.1-1.4.1" rev-constraint-dynamic="3.4.1-1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="flandmark" conf="compile, runtime" rev="3.4.1-1.4.1" rev-constraint-default="3.4.1-1.4.1" rev-constraint-dynamic="3.4.1-1.4.1" callerrev="1.07-1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="opencv-platform" conf="compile, runtime" rev="3.4.1-1.4.1" rev-constraint-default="3.4.1-1.4.1" rev-constraint-dynamic="3.4.1-1.4.1" callerrev="3.4.1-1.4.1"/>
+				<artifacts>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="android-arm64" status="successful" details="" size="22453975" time="14330" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-android-arm64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-android-arm64.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="android-x86" status="successful" details="" size="24526762" time="6306" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-android-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-android-x86.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="windows-x86_64" status="successful" details="" size="20894439" time="5775" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-windows-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-windows-x86_64.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="android-x86_64" status="successful" details="" size="24348048" time="8708" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-android-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-android-x86_64.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="ios-arm64" status="successful" details="" size="18328348" time="5526" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-ios-arm64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-ios-arm64.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="ios-x86_64" status="successful" details="" size="20097026" time="3099" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-ios-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-ios-x86_64.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="linux-x86" status="successful" details="" size="17134297" time="1825" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-linux-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-linux-x86.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="linux-ppc64le" status="successful" details="" size="19294583" time="3181" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-linux-ppc64le.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-linux-ppc64le.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" status="successful" details="" size="1470649" time="646" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="linux-armhf" status="successful" details="" size="17327777" time="4371" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-linux-armhf.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-linux-armhf.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="android-arm" status="successful" details="" size="19464467" time="3896" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-android-arm.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-android-arm.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="linux-x86_64" status="successful" details="" size="17371167" time="2705" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-linux-x86_64.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="windows-x86" status="successful" details="" size="17919340" time="2001" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-windows-x86.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-windows-x86.jar"/>
+					</artifact>
+					<artifact name="opencv" type="jar" ext="jar" extra-classifier="macosx-x86_64" status="successful" details="" size="18367778" time="2578" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco.javacpp-presets\opencv\jars\opencv-3.4.1-1.4.1-macosx-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1-macosx-x86_64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bytedeco" name="javacpp">
+			<revision name="1.4.1" status="release" pubdate="20180328140906" resolver="public" artresolver="public" homepage="http://bytedeco.org/javacpp/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="GNU General Public License (GPL) version 2, or any later version" url="http://www.gnu.org/licenses/"/>
+				<license name="GPLv2 with Classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<metadata-artifact status="successful" details="" size="10217" time="260" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacpp\ivy-1.4.1.xml" searched="true" original-local-location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacpp\ivy-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bytedeco/javacpp/1.4.1/javacpp-1.4.1.pom"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="libfreenect" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.5.3-1.4.1"/>
+				<caller organisation="org.bytedeco" name="javacv" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="videoinput" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.200-1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="opencv" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="3.4.1-1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="ffmpeg" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="3.4.2-1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="libfreenect2" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.2.0-1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="artoolkitplus" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="2.3.1-1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="libdc1394" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="2.2.5-1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="flandmark" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.07-1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="librealsense" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.12.1-1.4.1"/>
+				<caller organisation="org.bytedeco.javacpp-presets" name="flycapture" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="2.11.3.121-1.4.1"/>
+				<artifacts>
+					<artifact name="javacpp" type="jar" ext="jar" status="successful" details="" size="352202" time="979" location="C:\Users\KolhiziN\.ivy2\cache\org.bytedeco\javacpp\jars\javacpp-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bytedeco/javacpp/1.4.1/javacpp-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.4" status="release" pubdate="20171011102224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2670" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.4/scala-reflect-2.12.4.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.6.7"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3587892" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.4.jar">
 						<origin-location is-local="false" location="UNKNOWN"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12">
-			<revision name="1.0.2" error="public: unable to get resource for org/scala-lang/modules#scala-parser-combinators_2.12;1.0.2: res=https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.2/scala-parser-combinators_2.12-1.0.2.pom: java.net.UnknownHostException: Р­С‚РѕС‚ С…РѕСЃС‚ РЅРµРёР·РІРµСЃС‚РµРЅ (repo1.maven.org)" downloaded="false" searched="false" conf="default(compile)" position="-1">
-				<caller organisation="default" name="t04_load_img_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.1"/>
+		<module organisation="com.typesafe.play" name="play-json_2.12">
+			<revision name="2.6.7" status="release" pubdate="20171027011229" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4897" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.typesafe.play\play-json_2.12\ivy-2.6.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.6.7/play-json_2.12-2.6.7.pom"/>
+				<caller organisation="default" name="t04_load_img_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.6.7" rev-constraint-default="2.6.7" rev-constraint-dynamic="2.6.7" callerrev="0.1"/>
 				<artifacts>
+					<artifact name="play-json_2.12" type="jar" ext="jar" status="no" details="" size="659454" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.typesafe.play\play-json_2.12\jars\play-json_2.12-2.6.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.6.7/play-json_2.12-2.6.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310">
+			<revision name="2.8.9" status="release" pubdate="20170612080823" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="21341" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.9/jackson-datatype-jsr310-2.8.9.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jsr310" type="bundle" ext="jar" status="no" details="" size="90059" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.8.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.9/jackson-datatype-jsr310-2.8.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8">
+			<revision name="2.8.9" status="release" pubdate="20170612080811" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="21045" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.9/jackson-datatype-jdk8-2.8.9.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jdk8" type="bundle" ext="jar" status="no" details="" size="33877" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.8.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.9/jackson-datatype-jdk8-2.8.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.8.9" status="release" pubdate="20170612035351" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8225" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="1242477" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.8.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.8.9" status="release" pubdate="20170612033719" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7030" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.8.9"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.8.9"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="55784" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.8.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.8.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.8.9"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.8.9"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.8.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.8.9" status="release" pubdate="20170612034341" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7486" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.6.7"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="2.8.9"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="282633" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.8.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.9.9" status="release" pubdate="20170323163313" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6719" time="0" location="C:\Users\KolhiziN\.ivy2\cache\joda-time\joda-time\ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="2.6.7"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="634048" time="0" location="C:\Users\KolhiziN\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.9.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="macro-compat_2.12">
+			<revision name="1.1.1" status="release" pubdate="20161102114258" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/macro-compat" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2999" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.typelevel\macro-compat_2.12\ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="2.6.7"/>
+				<artifacts>
+					<artifact name="macro-compat_2.12" type="jar" ext="jar" status="no" details="" size="3180" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.typelevel\macro-compat_2.12\jars\macro-compat_2.12-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-functional_2.12">
+			<revision name="2.6.7" status="release" pubdate="20171027011224" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2718" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.typesafe.play\play-functional_2.12\ivy-2.6.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.6.7/play-functional_2.12-2.6.7.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="2.6.7" rev-constraint-default="2.6.7" rev-constraint-dynamic="2.6.7" callerrev="2.6.7"/>
+				<artifacts>
+					<artifact name="play-functional_2.12" type="jar" ext="jar" status="no" details="" size="177939" time="0" location="C:\Users\KolhiziN\.ivy2\cache\com.typesafe.play\play-functional_2.12\jars\play-functional_2.12-2.6.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.6.7/play-functional_2.12-2.6.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.4" status="release" pubdate="20171011100456" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2501" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="default, compile, runtime, master" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.6.7"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.12.4"/>
+				<caller organisation="com.typesafe.play" name="play-functional_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.6.7"/>
+				<caller organisation="default" name="t04_load_img_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.1"/>
+				<caller organisation="org.typelevel" name="macro-compat_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="1.1.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5247152" time="0" location="C:\Users\KolhiziN\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.4.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
 				</artifacts>
 			</revision>
 		</module>
