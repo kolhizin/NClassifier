@@ -167,6 +167,17 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1
+[debug] 	found org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 in sbt-chain
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: com.github.os72#protobuf-java-shaded-351;0.9 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: com.github.os72#protobuf-java-shaded-351;0.9
@@ -244,6 +255,17 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1
+[debug] 	found org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 in sbt-chain
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.slf4j#slf4j-api;1.7.10 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.10
@@ -552,6 +574,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
@@ -608,6 +638,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
@@ -864,6 +902,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->compile]
@@ -920,6 +966,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->compile]
@@ -1180,6 +1234,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
@@ -1236,6 +1298,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
@@ -1492,6 +1562,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->compile]
@@ -1548,6 +1626,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->compile]
@@ -1804,6 +1890,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [test->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [test->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [test->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [test->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [test->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [test->compile]
@@ -1860,6 +1954,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [test->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [test->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [test->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [test->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [test->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [test->compile]
@@ -2123,6 +2225,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
@@ -2179,6 +2289,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
@@ -2437,6 +2555,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile-internal->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile-internal->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile-internal->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile-internal->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile-internal->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile-internal->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile-internal->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile-internal->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile-internal->compile]
@@ -2493,6 +2619,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile-internal->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile-internal->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile-internal->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile-internal->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile-internal->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile-internal->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile-internal->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile-internal->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile-internal->compile]
@@ -2753,6 +2887,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
@@ -2809,6 +2951,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
@@ -3065,6 +3215,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->compile]
@@ -3121,6 +3279,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->compile]
@@ -3378,6 +3544,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime-internal->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime-internal->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime-internal->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime-internal->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime-internal->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime-internal->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime-internal->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime-internal->compile]
@@ -3434,6 +3608,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime-internal->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime-internal->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime-internal->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime-internal->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime-internal->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime-internal->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime-internal->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime-internal->compile]
@@ -3695,6 +3877,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [compile->compile]
@@ -3751,6 +3941,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [compile->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [compile->compile]
@@ -4007,6 +4205,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [runtime->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [runtime->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [runtime->compile]
@@ -4063,6 +4269,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [runtime->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [runtime->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [runtime->compile]
@@ -4319,6 +4533,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [test->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [test->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [test->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [test->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [test->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [test->compile]
@@ -4375,6 +4597,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [test->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [test->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [test->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [test->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [test->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [test->compile]
@@ -4633,6 +4863,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [test-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [test-internal->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang#scala-reflect;2.11.12 [test-internal->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test-internal->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test-internal->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test-internal->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test-internal->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1 [test-internal->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [test-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [test-internal->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->com.github.os72#protobuf-java-shaded-351;0.9 [test-internal->compile]
@@ -4689,6 +4927,14 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [test-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [test-internal->compile(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [test-internal->master]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test-internal->runtime(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test-internal->master(compile)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test-internal->runtime]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test-internal->compile]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test-internal->compile(*)]
+[debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1 [test-internal->master]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [test-internal->compile]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [test-internal->runtime(*)]
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->org.slf4j#slf4j-api;1.7.10 [test-internal->compile]
@@ -4888,637 +5134,296 @@
 [debug] == resolving dependencies default#t06_sbt_nd4s$sources;0.1->jline#jline;2.14.3 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] net.ericaro#neoitertools;1.0.0!neoitertools.jar(src)
-[debug] 	[NOT REQUIRED] com.nativelibs4java#scalaxy-loops_2.11;0.3.4!scalaxy-loops_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.nd4j#nd4j-buffer;1.0.0-alpha!nd4j-buffer.jar(src)
-[debug] 	[NOT REQUIRED] joda-time#joda-time;2.2!joda-time.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.commons#commons-compress;1.16.1!commons-compress.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.12!scala-compiler.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] 	[NOT REQUIRED] org.codehaus.woodstox#stax2-api;3.1.4!stax2-api.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] 	[NOT REQUIRED] org.reflections#reflections;0.9.10!reflections.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] 	[NOT REQUIRED] org.nd4j#nd4j-native;1.0.0-alpha!nd4j-native.jar(src)
-[debug] 	[NOT REQUIRED] org.yaml#snakeyaml;1.12!snakeyaml.jar(src)
-[debug] 	[NOT REQUIRED] org.nd4j#nd4s_2.11;1.0.0-alpha!nd4s_2.11.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.yaml\snakeyaml\1.12\srcs\snakeyaml-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\com.nativelibs4java\scalaxy-loops_2.11\0.3.4\srcs\scalaxy-loops_2.11-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-loops_2.11/0.3.4/scalaxy-loops_2.11-0.3.4-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\com.github.os72\protobuf-java-util-shaded-351\0.9\srcs\protobuf-java-util-shaded-351-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/github/os72/protobuf-java-util-shaded-351/0.9/protobuf-java-util-shaded-351-0.9-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\com.github.os72\protobuf-java-shaded-351\0.9\srcs\protobuf-java-shaded-351-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/github/os72/protobuf-java-shaded-351/0.9/protobuf-java-shaded-351-0.9-sources.jar
 [debug] 	[NOT REQUIRED] org.bytedeco#javacpp;1.4.1!javacpp.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.nd4j\nd4s_2.11\1.0.0-alpha\srcs\nd4s_2.11-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.javassist\javassist\3.18.2-GA\srcs\javassist-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/nd4j/nd4s_2.11/1.0.0-alpha/nd4s_2.11-1.0.0-alpha-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.scala-lang\scala-compiler\2.11.12\srcs\scala-compiler-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.bytedeco.javacpp-presets\openblas\0.2.20-1.4.1\srcs\openblas-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\net.ericaro\neoitertools\1.0.0\srcs\neoitertools-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/net/ericaro/neoitertools/1.0.0/neoitertools-1.0.0-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.nd4j\nd4j-native\1.0.0-alpha\srcs\nd4j-native-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.objenesis\objenesis\2.6\srcs\objenesis-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.nd4j\nd4j-native-platform\1.0.0-alpha\srcs\nd4j-native-platform-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/nd4j/nd4j-native-platform/1.0.0-alpha/nd4j-native-platform-1.0.0-alpha-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.codehaus.woodstox\stax2-api\3.1.4\srcs\stax2-api-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.nd4j\nd4j-buffer\1.0.0-alpha\srcs\nd4j-buffer-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.nd4j\nd4j-native-api\1.0.0-alpha\srcs\nd4j-native-api-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/nd4j/nd4j-native-api/1.0.0-alpha/nd4j-native-api-1.0.0-alpha-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/nd4j/nd4j-buffer/1.0.0-alpha/nd4j-buffer-1.0.0-alpha-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\com.nativelibs4java\scalaxy-streams_2.11\0.3.4\srcs\scalaxy-streams_2.11-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\joda-time\joda-time\2.2\srcs\joda-time-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-streams_2.11/0.3.4/scalaxy-streams_2.11-0.3.4-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\com.google.guava\guava\19.0\srcs\guava-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.scala-lang\scala-reflect\2.11.12\srcs\scala-reflect-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.nd4j\nd4j-api\1.0.0-alpha\srcs\nd4j-api-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/nd4j/nd4j-api/1.0.0-alpha/nd4j-api-1.0.0-alpha-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.bytedeco.javacpp-presets\mkl-platform\2018.1-1.4.1\srcs\mkl-platform-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.slf4j\slf4j-api\1.7.10\srcs\slf4j-api-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl-platform/2018.1-1.4.1/mkl-platform-2018.1-1.4.1-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\uk.com.robust-it\cloning\1.9.3\srcs\cloning-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/uk/com/robust-it/cloning/1.9.3/cloning-1.9.3-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.nd4j\jackson\1.0.0-alpha\srcs\jackson-sources.jar
 [debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
+[debug] 		tried https://repo1.maven.org/maven2/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4-sources.jar
 [debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] 	[NOT REQUIRED] org.nd4j#nd4j-native-api;1.0.0-alpha!nd4j-native-api.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2-sources.jar
 [debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
 [debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] 	[NOT REQUIRED] org.javassist#javassist;3.18.2-GA!javassist.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] 	[NOT REQUIRED] org.nd4j#nd4j-common;1.0.0-alpha!nd4j-common.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] 	[NOT REQUIRED] org.nd4j#nd4j-native-platform;1.0.0-alpha!nd4j-native-platform.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] 	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar(src)
-[debug] 	[NOT REQUIRED] com.github.os72#protobuf-java-shaded-351;0.9!protobuf-java-shaded-351.jar(src)
-[debug] 	[NOT REQUIRED] org.objenesis#objenesis;2.6!objenesis.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] 	[NOT REQUIRED] org.apache.commons#commons-math3;3.4.1!commons-math3.jar(src)
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	[NOT REQUIRED] uk.com.robust-it#cloning;1.9.3!cloning.jar(src)
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] 	[NOT REQUIRED] org.bytedeco.javacpp-presets#openblas;0.2.20-1.4.1!openblas.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
 [debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] settings loaded (27ms)
+[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] 		tried https://repo1.maven.org/maven2/org/nd4j/jackson/1.0.0-alpha/jackson-1.0.0-alpha-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/github/os72/protobuf-java-shaded-351/0.9/protobuf-java-shaded-351-0.9-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/os72/protobuf-java-shaded-351/0.9/protobuf-java-shaded-351-0.9-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/github/os72/protobuf-java-util-shaded-351/0.9/protobuf-java-util-shaded-351-0.9-sources.jar ...
+[info] downloading https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-loops_2.11/0.3.4/scalaxy-loops_2.11-0.3.4-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/os72/protobuf-java-util-shaded-351/0.9/protobuf-java-util-shaded-351-0.9-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-loops_2.11/0.3.4/scalaxy-loops_2.11-0.3.4-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/nd4j/nd4s_2.11/1.0.0-alpha/nd4s_2.11-1.0.0-alpha-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4s_2.11/1.0.0-alpha/nd4s_2.11-1.0.0-alpha-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-loops_2.11/0.3.4/scalaxy-loops_2.11-0.3.4-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-native-api/1.0.0-alpha/nd4j-native-api-1.0.0-alpha-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-native-api/1.0.0-alpha/nd4j-native-api-1.0.0-alpha-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-native-platform/1.0.0-alpha/nd4j-native-platform-1.0.0-alpha-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-native-platform/1.0.0-alpha/nd4j-native-platform-1.0.0-alpha-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/os72/protobuf-java-util-shaded-351/0.9/protobuf-java-util-shaded-351-0.9-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-loops_2.11/0.3.4/scalaxy-loops_2.11-0.3.4-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/nd4j/jackson/1.0.0-alpha/jackson-1.0.0-alpha-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/jackson/1.0.0-alpha/jackson-1.0.0-alpha-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4s_2.11/1.0.0-alpha/nd4s_2.11-1.0.0-alpha-sources.jar.sha1
+[info] 	[SUCCESSFUL ] com.nativelibs4java#scalaxy-loops_2.11;0.3.4!scalaxy-loops_2.11.jar(src) (377ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.nd4j\nd4j-common\1.0.0-alpha\srcs\nd4j-common-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/nd4j/nd4j-common/1.0.0-alpha/nd4j-common-1.0.0-alpha-sources.jar
+[info] downloading https://repo1.maven.org/maven2/net/ericaro/neoitertools/1.0.0/neoitertools-1.0.0-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/net/ericaro/neoitertools/1.0.0/neoitertools-1.0.0-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-buffer/1.0.0-alpha/nd4j-buffer-1.0.0-alpha-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-buffer/1.0.0-alpha/nd4j-buffer-1.0.0-alpha-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl-platform/2018.1-1.4.1/mkl-platform-2018.1-1.4.1-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.sbt\preloaded\org.bytedeco.javacpp-presets\mkl-platform\2018.1-1.4.1\srcs\mkl-platform-sources.jar
+[debug] 		tried file:/C:/Users/KolhiziN/.sbt/preloaded/org/bytedeco/javacpp-presets/mkl-platform/2018.1-1.4.1/mkl-platform-2018.1-1.4.1-sources.jar
+[warn] 	Detected merged artifact: [FAILED     ] org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1!mkl-platform.jar(src):  (0ms).
+[warn] ==== local: tried
+[warn] ==== public: tried
+[warn] ==== local-preloaded-ivy: tried
+[warn]   C:\Users\KolhiziN\.sbt\preloaded\org.bytedeco.javacpp-presets\mkl-platform\2018.1-1.4.1\srcs\mkl-platform-sources.jar
+[warn] ==== local-preloaded: tried
+[warn]   file:/C:/Users/KolhiziN/.sbt/preloaded/org/bytedeco/javacpp-presets/mkl-platform/2018.1-1.4.1/mkl-platform-2018.1-1.4.1-sources.jar
+[info] downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/uk/com/robust-it/cloning/1.9.3/cloning-1.9.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/uk/com/robust-it/cloning/1.9.3/cloning-1.9.3-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-common/1.0.0-alpha/nd4j-common-1.0.0-alpha-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-common/1.0.0-alpha/nd4j-common-1.0.0-alpha-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-streams_2.11/0.3.4/scalaxy-streams_2.11-0.3.4-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-streams_2.11/0.3.4/scalaxy-streams_2.11-0.3.4-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-api/1.0.0-alpha/nd4j-api-1.0.0-alpha-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-api/1.0.0-alpha/nd4j-api-1.0.0-alpha-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/os72/protobuf-java-util-shaded-351/0.9/protobuf-java-util-shaded-351-0.9-sources.jar
+[info] 	[SUCCESSFUL ] com.github.os72#protobuf-java-util-shaded-351;0.9!protobuf-java-util-shaded-351.jar(src) (503ms)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] settings loaded (38ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] 	[NOT REQUIRED] com.google.guava#guava;19.0!guava.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] 	[NOT REQUIRED] org.nd4j#nd4j-api;1.0.0-alpha!nd4j-api.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] 	[NOT REQUIRED] com.nativelibs4java#scalaxy-streams_2.11;0.3.4!scalaxy-streams_2.11.jar(src)
-[debug] 	[NOT REQUIRED] com.vlkan#flatbuffers;1.2.0-3f79e055!flatbuffers.jar(src)
-[debug] 	[NOT REQUIRED] org.nd4j#jackson;1.0.0-alpha!jackson.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] 	[NOT REQUIRED] org.bytedeco.javacpp-presets#mkl;2018.1-1.4.1!mkl.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.12!scala-reflect.jar(src)
-[debug] 	[NOT REQUIRED] com.google.code.gson#gson;2.7!gson.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] 	[NOT REQUIRED] com.github.os72#protobuf-java-util-shaded-351;0.9!protobuf-java-util-shaded-351.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] settings loaded (48ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-native-platform/1.0.0-alpha/nd4j-native-platform-1.0.0-alpha-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/jackson/1.0.0-alpha/jackson-1.0.0-alpha-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nd4j/nd4s_2.11/1.0.0-alpha/nd4s_2.11-1.0.0-alpha-sources.jar
+[info] 	[SUCCESSFUL ] org.nd4j#nd4s_2.11;1.0.0-alpha!nd4s_2.11.jar(src) (584ms)
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nd4j/nd4j-native-platform/1.0.0-alpha/nd4j-native-platform-1.0.0-alpha-sources.jar
+[info] 	[SUCCESSFUL ] org.nd4j#nd4j-native-platform;1.0.0-alpha!nd4j-native-platform.jar(src) (681ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.reflections\reflections\0.9.10\srcs\reflections-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/os72/protobuf-java-shaded-351/0.9/protobuf-java-shaded-351-0.9-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nd4j/jackson/1.0.0-alpha/jackson-1.0.0-alpha-sources.jar
+[info] 	[SUCCESSFUL ] org.nd4j#jackson;1.0.0-alpha!jackson.jar(src) (698ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.apache.commons\commons-compress\1.16.1\srcs\commons-compress-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10-sources.jar
+[info] 	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.10!slf4j-api.jar(src) (753ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.nd4j\nd4j-context\1.0.0-alpha\srcs\nd4j-context-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/nd4j/nd4j-context/1.0.0-alpha/nd4j-context-1.0.0-alpha-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-streams_2.11/0.3.4/scalaxy-streams_2.11-0.3.4-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-context/1.0.0-alpha/nd4j-context-1.0.0-alpha-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-context/1.0.0-alpha/nd4j-context-1.0.0-alpha-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/os72/protobuf-java-shaded-351/0.9/protobuf-java-shaded-351-0.9-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nd4j/nd4j-native/1.0.0-alpha/nd4j-native-1.0.0-alpha-sources.jar
+[info] 	[SUCCESSFUL ] com.github.os72#protobuf-java-shaded-351;0.9!protobuf-java-shaded-351.jar(src) (855ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.bytedeco.javacpp-presets\mkl\2018.1-1.4.1\srcs\mkl-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-sources.jar
+[info] 	[SUCCESSFUL ] org.objenesis#objenesis;2.6!objenesis.jar(src) (844ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.apache.commons\commons-math3\3.4.1\srcs\commons-math3-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-common/1.0.0-alpha/nd4j-common-1.0.0-alpha-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/uk/com/robust-it/cloning/1.9.3/cloning-1.9.3-sources.jar.sha1
+[info] 	[SUCCESSFUL ] org.nd4j#nd4j-native;1.0.0-alpha!nd4j-native.jar(src) (855ms)
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/nativelibs4java/scalaxy-streams_2.11/0.3.4/scalaxy-streams_2.11-0.3.4-sources.jar
+[info] 	[SUCCESSFUL ] com.nativelibs4java#scalaxy-streams_2.11;0.3.4!scalaxy-streams_2.11.jar(src) (921ms)
+[info] downloading https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4-sources.jar.sha1
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.11.12!scala-compiler.jar(src) (928ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\commons-io\commons-io\2.4\srcs\commons-io-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/uk/com/robust-it/cloning/1.9.3/cloning-1.9.3-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nd4j/nd4j-common/1.0.0-alpha/nd4j-common-1.0.0-alpha-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12-sources.jar
+[info] 	[SUCCESSFUL ] org.nd4j#nd4j-common;1.0.0-alpha!nd4j-common.jar(src) (654ms)
+[info] 	[SUCCESSFUL ] org.yaml#snakeyaml;1.12!snakeyaml.jar(src) (1035ms)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.5!scala-xml_2.11.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] settings loaded (67ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.10!slf4j-api.jar(src)
+[debug] 	public: downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar
+[info] 	[SUCCESSFUL ] uk.com.robust-it#cloning;1.9.3!cloning.jar(src) (1036ms)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.3!jline.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.commons#commons-lang3;3.3.1!commons-lang3.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] 	[NOT REQUIRED] org.nd4j#nd4j-context;1.0.0-alpha!nd4j-context.jar(src)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.12!scala-library.jar(src)
-[debug] settings loaded (86ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] settings loaded (53ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] settings loaded (99ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (98ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] no default ivy user dir defined: set to C:\Users\KolhiziN\.ivy2
-[debug] settings loaded (62ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (49ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] settings loaded (99ms)
-[debug] 	default resolver: default
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	local [file]
-[debug] settings loaded (93ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] settings loaded (102ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] settings loaded (104ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (86ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (88ms)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (70ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (69ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (97ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] settings loaded (94ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (132ms)
-[debug] settings loaded (132ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	public [ibiblio]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	main [chain] [shared, public]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (71ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (106ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (80ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] settings loaded (92ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default [chain] [local, main]
-[debug] 	default resolver: default
-[debug] 	public [ibiblio]
-[debug] 	-- 5 resolvers:
-[debug] settings loaded (89ms)
-[debug] 	shared [file]
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	main [chain] [shared, public]
-[debug] 	default [chain] [local, main]
-[debug] 	-- 5 resolvers:
-[debug] 	local [file]
-[debug] 	shared [file]
-[debug] 	public [ibiblio]
-[debug] 	default [chain] [local, main]
-[debug] 	main [chain] [shared, public]
-[debug] 	public [ibiblio]
-[debug] 	local [file]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (64ms)
-[debug] settings loaded (137ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (44ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (42ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] no default cache defined: set to C:\Users\KolhiziN\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (91ms)
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (55ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (123ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (58ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] settings loaded (116ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (101ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/KolhiziN/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.1.5/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (94ms)
-[debug] 	default cache: C:\Users\KolhiziN\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] :: resolution report :: resolve 1340ms :: artifacts dl 183ms
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-context/1.0.0-alpha/nd4j-context-1.0.0-alpha-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-sources.jar.sha1
+[info] 	[SUCCESSFUL ] org.codehaus.woodstox#stax2-api;3.1.4!stax2-api.jar(src) (1097ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-buffer/1.0.0-alpha/nd4j-buffer-1.0.0-alpha-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nd4j/nd4j-context/1.0.0-alpha/nd4j-context-1.0.0-alpha-sources.jar
+[info] 	[SUCCESSFUL ] joda-time#joda-time;2.2!joda-time.jar(src) (1172ms)
+[info] 	[SUCCESSFUL ] org.nd4j#nd4j-context;1.0.0-alpha!nd4j-context.jar(src) (446ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/net/ericaro/neoitertools/1.0.0/neoitertools-1.0.0-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/mkl/2018.1-1.4.1/mkl-2018.1-1.4.1-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-native-api/1.0.0-alpha/nd4j-native-api-1.0.0-alpha-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10-sources.jar
+[info] 	[SUCCESSFUL ] org.bytedeco.javacpp-presets#mkl;2018.1-1.4.1!mkl.jar(src) (406ms)
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nd4j/nd4j-buffer/1.0.0-alpha/nd4j-buffer-1.0.0-alpha-sources.jar
+[info] 	[SUCCESSFUL ] org.reflections#reflections;0.9.10!reflections.jar(src) (601ms)
+[info] 	[SUCCESSFUL ] org.nd4j#nd4j-buffer;1.0.0-alpha!nd4j-buffer.jar(src) (1298ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.scala-lang\scala-library\2.11.12\srcs\scala-library-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.11.12!scala-reflect.jar(src) (1322ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.bytedeco.javacpp-presets\openblas-platform\0.2.20-1.4.1\srcs\openblas-platform-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas-platform/0.2.20-1.4.1/openblas-platform-0.2.20-1.4.1-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/net/ericaro/neoitertools/1.0.0/neoitertools-1.0.0-sources.jar
+[info] 	[SUCCESSFUL ] net.ericaro#neoitertools;1.0.0!neoitertools.jar(src) (1359ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\org.apache.commons\commons-lang3\3.3.1\srcs\commons-lang3-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.1/commons-lang3-3.3.1-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nd4j/nd4j-api/1.0.0-alpha/nd4j-api-1.0.0-alpha-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1-sources.jar.sha1
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas-platform/0.2.20-1.4.1/openblas-platform-0.2.20-1.4.1-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nd4j/nd4j-native-api/1.0.0-alpha/nd4j-native-api-1.0.0-alpha-sources.jar
+[debug] 		tried C:\Users\KolhiziN\.sbt\preloaded\org.bytedeco.javacpp-presets\openblas-platform\0.2.20-1.4.1\srcs\openblas-platform-sources.jar
+[debug] 		tried file:/C:/Users/KolhiziN/.sbt/preloaded/org/bytedeco/javacpp-presets/openblas-platform/0.2.20-1.4.1/openblas-platform-0.2.20-1.4.1-sources.jar
+[warn] 	Detected merged artifact: [FAILED     ] org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1!openblas-platform.jar(src):  (0ms).
+[warn] ==== local: tried
+[warn] ==== public: tried
+[warn] ==== local-preloaded-ivy: tried
+[warn]   C:\Users\KolhiziN\.sbt\preloaded\org.bytedeco.javacpp-presets\openblas-platform\0.2.20-1.4.1\srcs\openblas-platform-sources.jar
+[warn] ==== local-preloaded: tried
+[warn]   file:/C:/Users/KolhiziN/.sbt/preloaded/org/bytedeco/javacpp-presets/openblas-platform/0.2.20-1.4.1/openblas-platform-0.2.20-1.4.1-sources.jar
+[info] 	[SUCCESSFUL ] org.javassist#javassist;3.18.2-GA!javassist.jar(src) (1419ms)
+[info] downloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.1/commons-lang3-3.3.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.1/commons-lang3-3.3.1-sources.jar
+[info] 	[SUCCESSFUL ] org.nd4j#nd4j-native-api;1.0.0-alpha!nd4j-native-api.jar(src) (1411ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nd4j/nd4j-api/1.0.0-alpha/nd4j-api-1.0.0-alpha-sources.jar
+[info] 	[SUCCESSFUL ] org.apache.commons#commons-compress;1.16.1!commons-compress.jar(src) (808ms)
+[info] 	[SUCCESSFUL ] org.nd4j#nd4j-api;1.0.0-alpha!nd4j-api.jar(src) (1541ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\com.vlkan\flatbuffers\1.2.0-3f79e055\srcs\flatbuffers-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar
+[info] 	[SUCCESSFUL ] commons-io#commons-io;2.4!commons-io.jar(src) (634ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/openblas/0.2.20-1.4.1/openblas-0.2.20-1.4.1-sources.jar
+[info] 	[SUCCESSFUL ] org.bytedeco.javacpp-presets#openblas;0.2.20-1.4.1!openblas.jar(src) (1755ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055-sources.jar
+[info] 	[SUCCESSFUL ] com.vlkan#flatbuffers;1.2.0-3f79e055!flatbuffers.jar(src) (350ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.1/commons-lang3-3.3.1-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.11.12!scala-library.jar(src) (826ms)
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.1/commons-lang3-3.3.1-sources.jar
+[info] 	[SUCCESSFUL ] org.apache.commons#commons-lang3;3.3.1!commons-lang3.jar(src) (1116ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0-sources.jar
+[info] 	[SUCCESSFUL ] com.google.guava#guava;19.0!guava.jar(src) (2934ms)
+[debug] 		tried C:\Users\KolhiziN\.ivy2\local\com.google.code.gson\gson\2.7\srcs\gson-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7-sources.jar
+[info] 	[SUCCESSFUL ] com.google.code.gson#gson;2.7!gson.jar(src) (576ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1-sources.jar
+[info] 	[SUCCESSFUL ] org.apache.commons#commons-math3;3.4.1!commons-math3.jar(src) (3882ms)
+[debug] :: resolution report :: resolve 784ms :: artifacts dl 4781ms
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	::              FAILED DOWNLOADS            ::
+[warn] 	:: ^ see resolution messages for details  ^ ::
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	:: org.bytedeco.javacpp-presets#openblas-platform;0.2.20-1.4.1!openblas-platform.jar(src)
+[warn] 	:: org.bytedeco.javacpp-presets#mkl-platform;2018.1-1.4.1!mkl-platform.jar(src)
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
 [debug] 	report for default#t06_sbt_nd4s$sources;0.1 compile produced in D:\Programming\NClassifier\dev_tests\t06_sbt_nd4s\target\scala-2.11\resolution-cache\reports\default-t06_sbt_nd4s$sources-compile.xml
 [debug] 	report for default#t06_sbt_nd4s$sources;0.1 runtime produced in D:\Programming\NClassifier\dev_tests\t06_sbt_nd4s\target\scala-2.11\resolution-cache\reports\default-t06_sbt_nd4s$sources-runtime.xml
 [debug] 	report for default#t06_sbt_nd4s$sources;0.1 test produced in D:\Programming\NClassifier\dev_tests\t06_sbt_nd4s\target\scala-2.11\resolution-cache\reports\default-t06_sbt_nd4s$sources-test.xml
@@ -5530,4 +5435,4 @@
 [debug] 	report for default#t06_sbt_nd4s$sources;0.1 plugin produced in D:\Programming\NClassifier\dev_tests\t06_sbt_nd4s\target\scala-2.11\resolution-cache\reports\default-t06_sbt_nd4s$sources-plugin.xml
 [debug] 	report for default#t06_sbt_nd4s$sources;0.1 pom produced in D:\Programming\NClassifier\dev_tests\t06_sbt_nd4s\target\scala-2.11\resolution-cache\reports\default-t06_sbt_nd4s$sources-pom.xml
 [debug] 	report for default#t06_sbt_nd4s$sources;0.1 scala-tool produced in D:\Programming\NClassifier\dev_tests\t06_sbt_nd4s\target\scala-2.11\resolution-cache\reports\default-t06_sbt_nd4s$sources-scala-tool.xml
-[debug] 	resolve done (1340ms resolve - 183ms download)
+[debug] 	resolve done (784ms resolve - 4781ms download)
