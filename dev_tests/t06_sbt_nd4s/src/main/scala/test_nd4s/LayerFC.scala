@@ -58,16 +58,16 @@ class LayerFC(input_size: Int, output_size: Int) extends CompNode {
     if(v.contains("b")) init_b(v("b"))
   }
 
-  override def forward(in: Map[String, INDArray]) : Map[String, INDArray] = {
+  override def forward(in: Map[String, INDArray]) : (Map[String, INDArray], CompState) = {
     assert(in.keySet == LayerFC.input)
-    Map("y" -> forward_x(in("x")))
+    (Map("y" -> forward_x(in("x"))), new CompState(in))
   }
-  override def backward(dOut: Map[String, INDArray], in: Map[String, INDArray]) : Map[String, INDArray] = {
-    assert(in.keySet == LayerFC.input)
+  override def backward(dOut: Map[String, INDArray], s: CompState) : Map[String, INDArray] = {
+    assert(s.in.keySet == LayerFC.input)
     assert(dOut.keySet == LayerFC.output)
-    Map("x" -> backward_x(dOut("y"), in("x")),
-      "a" -> backward_a(dOut("y"), in("x")),
-      "b" -> backward_b(dOut("y"), in("x")))
+    Map("x" -> backward_x(dOut("y"), s.in("x")),
+      "a" -> backward_a(dOut("y"), s.in("x")),
+      "b" -> backward_b(dOut("y"), s.in("x")))
   }
 
 

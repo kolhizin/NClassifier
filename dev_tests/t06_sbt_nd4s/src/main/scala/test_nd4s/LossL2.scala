@@ -16,15 +16,15 @@ class LossL2 extends CompNode {
     (Y - X) * 2.0// * dLoss
   }
 
-  override def forward(in: Map[String, INDArray]) : Map[String, INDArray] = {
+  override def forward(in: Map[String, INDArray]) : (Map[String, INDArray], CompState) = {
     assert(in.keySet == LossL2.input)
-    Map("loss" -> forward_loss(in("x"), in("y")))
+    (Map("loss" -> forward_loss(in("x"), in("y"))), new CompState(in))
   }
-  override def backward(dOut: Map[String, INDArray], in: Map[String, INDArray]) : Map[String, INDArray] = {
-    assert(in.keySet == LossL2.input)
+  override def backward(dOut: Map[String, INDArray], s: CompState) : Map[String, INDArray] = {
+    assert(s.in.keySet == LossL2.input)
     assert(dOut.keySet == LossL2.output)
-    Map("x" -> backward_x(dOut("loss"), in("x"), in("y")),
-      "y" -> backward_y(dOut("loss"), in("x"), in("y")))
+    Map("x" -> backward_x(dOut("loss"), s.in("x"), s.in("y")),
+      "y" -> backward_y(dOut("loss"), s.in("x"), s.in("y")))
   }
 
 
