@@ -4,6 +4,8 @@ import org.nd4j.linalg.factory.Nd4j
 import org.nd4j.linalg.api.ndarray.INDArray
 import org.nd4s.Implicits._
 
+import scala.collection.mutable
+
 object TestApp extends App {
   def benchmarkND4J(dim: Int, num_runs: Int) : Double = {
     val A = Nd4j.rand(dim, dim)
@@ -82,6 +84,7 @@ object TestApp extends App {
       Map("fc.in" -> "x", "loss.ref" -> "y"),
       Map("loss.res" -> "loss"))
   */
+  /*
   val f = LinkSeq(fc, lf, Map("y" -> "x"), Map("x" -> "x"))
 
   val (x, y) = makeSample3x2(30)
@@ -94,7 +97,7 @@ object TestApp extends App {
   println(l2)
   //println(f.get("fc.a"))
   //println(f.get("fc.b"))
-
+  */
   /*
   Graph.addInputs("x", "y")
   Graph.addNodes(Map("fc1" -> fc1, "fc2" -> fc2, "loss" -> fl))
@@ -108,10 +111,33 @@ object TestApp extends App {
   what is gradient flow?
    */
 
-  val r = List("a" -> "b", "b" -> "c", "b" -> "d", "a" -> "d")
+  //println(CompGraphBuilder.existCycle(List("a" -> "b", "b" -> "c", "b" -> "d", "a" -> "d")), "should be false")
+  //println(CompGraphBuilder.existCycle(List("a" -> "b", "b" -> "c", "b" -> "d", "a" -> "d", "c" -> "a")), "should be true")
 
-  println(r)
-  println(CompGraphBuilder.checkLinkStructure(r))
+  /*
+  val cgb = new CompGraphBuilder()
+  cgb.addNodes(Map("fc"->fc, "lf" -> lf))
+  cgb.addInputs(Set("x", "y"))
+  cgb.addOutputs(Set("loss"))
+  cgb.addLinks(List("x" -> "fc.x", "fc.y" -> "lf.x", "y"->"lf.y", "lf.loss"->"loss"))
+
+  val cg = cgb.graph
+  */
+  val cg = CompGraph.link(fc, lf, Seq("y" -> "x"))
+
+  val (x, y) = makeSample3x2(30)
+  val input = Map("x" -> x, "y" -> y)
+
+  /*
+  val (res,cs) = cg.forward(Map("x" -> x, "y" -> y))
+  val grads = cg.backward(Map("loss" -> Nd4j.ones(1)), cs)
+  */
+
+  val (l1, _) = cg.forward(input)
+  for(i <- 0 to 30)makeStep(input, cg, 0.01)
+  val (l2, _) = cg.forward(input)
+
+  println(l1("loss").getDouble(0), l2("loss").getDouble(0))
 
   println("Done")
 }
