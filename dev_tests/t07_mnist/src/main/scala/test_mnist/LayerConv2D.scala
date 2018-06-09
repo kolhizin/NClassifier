@@ -14,5 +14,5 @@ dst(row, col, feature) = sum(-d to +d, -d to -d){sum_j(src(row+irow, col+icol, j
 dL / dsrc = dL / ddst * (ddst / dsrc)
 
 ddst(row1, col1, f1) / dsrc(row2, col2, f2) =
-= 
+=
 */
