@@ -70,7 +70,6 @@ class LayerFC(input_size: Int, output_size: Int) extends CompNode {
       "b" -> backwardB(dOut("out"), s.in("x")))
   }
 
-
   override def input : Set[String] = Set("x")
   override def output : Set[String] = Set("out")
   override def variables : Set[String] = Set("a", "b")

@@ -58,25 +58,32 @@ object TestApp extends App{
 
   val gBuilder = new CompGraphBuilder
   gBuilder.addInputs(Set("x", "y"))
-  gBuilder.addOutputs(Set("cross_entropy", "p"))
+  gBuilder.addOutputs(Set("cross_entropy", "p", "accuracy"))
 
   val fc1 = LayerFC(Nd4j.randn(10, 1), Nd4j.randn(10, 28*28))
 
-  gBuilder.addNodes(Map("fc1" -> fc1, "softmax" -> LayerMap.softmax,
-    "loss_ce" -> LayerLoss.softmaxCrossEntropyWithLogits))
+  gBuilder.addNodes(Map("fc1" -> fc1, "softmax" -> LayerMap.softmax, "xargmax" -> LayerMapFwd.argmax, "yargmax" -> LayerMapFwd.argmax,
+    "loss_ce" -> LayerLoss.softmaxCrossEntropyWithLogits, "acrcy" -> LayerStat.accuracy))
 
   gBuilder.addLinks(Seq("x" -> "fc1.x", "fc1.out" -> "softmax.x", "fc1.out" -> "loss_ce.x",
                     "y" -> "loss_ce.y", "softmax.out" -> "p", "loss_ce.loss"->"cross_entropy"))
+  gBuilder.addLinks(Seq("y" -> "yargmax.x", "yargmax.out" -> "acrcy.y",
+        "softmax.out"->"xargmax.x", "xargmax.out"->"acrcy.x", "acrcy.stat" -> "accuracy"))
+
+  gBuilder.addNodes(Map("confmatrix"->LayerStat.confusionMatrix))
+  gBuilder.addOutputs(Set("confusion"))
+  gBuilder.addLinks(Seq("xargmax.out"->"confmatrix.x", "yargmax.out" -> "confmatrix.y", "confmatrix.stat" -> "confusion"))
 
   val graph = gBuilder.graph
 
   val input = Map("x" -> devX, "y" -> devY)
-  val dOutput = Map("p"->Nd4j.zerosLike(devY), "cross_entropy" -> Nd4j.ones(1))
+  val dOutput = Map("p"->Nd4j.zerosLike(devY), "cross_entropy" -> Nd4j.ones(1),
+    "accuracy"->Nd4j.zeros(1), "confusion"->Nd4j.zeros(1))
 
   val l1 = graph.forward(input)._1("cross_entropy")
   for(i <- 1 to 1000){
     val r = makeStep(input, dOutput, graph, 0.2)
-    if(i % 10 == 0)println(i, r("cross_entropy")(0,0).toDouble)
+    if(i % 10 == 0)println(i, r("cross_entropy")(0,0).toDouble, r("accuracy")(0,0).toDouble)
   }
   val res = graph.forward(input)._1
   val l2 = res("cross_entropy")
@@ -84,9 +91,12 @@ object TestApp extends App{
 
   println(l1, l2)
 
+  println(res("accuracy"))
+  println(res("confusion"))
 
   println(prob(0->20, ->))
   println(srcY(0->20, ->))
+
 
   println("Done")
 }
