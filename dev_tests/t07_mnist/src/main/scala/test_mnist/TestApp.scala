@@ -4,7 +4,9 @@ import java.io.FileInputStream
 
 import org.nd4j.linalg.factory.Nd4j
 import org.nd4j.linalg.api.ndarray.INDArray
+import org.nd4j.linalg.convolution.Convolution
 import org.nd4s.Implicits._
+import org.nd4j.linalg.ops.transforms.Transforms
 
 
 object TestApp extends App{
@@ -50,6 +52,16 @@ object TestApp extends App{
 
 //  test3x2(50, 20, 0.01)
 
+  //test convolution
+  val img = Array(0, 1, 0, 1, 0, 1, 0, 1, 0).asNDArray(3, 3)
+  val kern = Array(1, 0, 0, 0).asNDArray(2, 2)
+  println(img)
+  println(kern)
+  Convolution.
+  println(Nd4j.getConvolution().convn(img, kern, Convolution.Type.SAME))
+
+
+/*
   val srcX = MNIST.readImages("../../dev_datasets/MNIST/train-images.idx3-ubyte")
   val srcY = MNIST.readLabels("../../dev_datasets/MNIST/train-labels.idx1-ubyte")
 
@@ -96,7 +108,7 @@ object TestApp extends App{
 
   println(prob(0->20, ->))
   println(srcY(0->20, ->))
-
+*/
 
   println("Done")
 }
