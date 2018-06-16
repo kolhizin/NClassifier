@@ -5,3 +5,5 @@
 *.suo
 *.pdb
 *.cache
+*.idx3-ubyte
+*.idx1-ubyte
