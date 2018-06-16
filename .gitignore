@@ -3,6 +3,7 @@
 *.jpg
 *.jpeg
 *.suo
+*.pickle
 *.pdb
 *.cache
 *.idx3-ubyte

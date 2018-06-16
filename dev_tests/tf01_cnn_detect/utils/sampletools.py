@@ -1,4 +1,5 @@
 import numpy as np
+import cv2
 
 ##########################################################################
 ##########################################################################
@@ -23,8 +24,8 @@ def generate_sample_spacing_nd(src_size, sample_size, stride):
         return generate_sample_spacing_1d(src_size, sample_size, stride)
     if len(src_size) == 1:
         return generate_sample_spacing_1d(src_size[0], sample_size[0], stride[0])
-    tmp1 = generate_sample_spacing_1d(src_size[-1], sample_size[-1], stride[-1])
-    tmp2 = generate_sample_spacing_nd(src_size[:-1], sample_size[:-1], stride[:-1])
+    tmp2 = generate_sample_spacing_1d(src_size[-1], sample_size[-1], stride[-1])
+    tmp1 = generate_sample_spacing_nd(src_size[:-1], sample_size[:-1], stride[:-1])
     return [(*x, *y) for x in tmp1 for y in tmp2]
 
 def generate_size_chain_1d(src_size, minimal_size, factor):
@@ -204,7 +205,8 @@ def calculate_samples_relevant_imgregions_target(samples, imgregions,
         if relevancy_res[most_relevant_id] <= relevancy_cutoff:
             return target(sample, None)
         return target(sample, imgregions[most_relevant_id])
-    
+    if num_regions == 0:
+        return [target(sample, None) for sample in samples]
     return [calc_relevant_target(sample) for sample in samples]
 
 def calculate_sample_target_pct_sample_area(sample, imgregion):
@@ -237,3 +239,151 @@ def calculate_sample_chain_target(sample_chain, imgregions,
                         relevancy, relevancy_cutoff, target)
         for (img_size, samples) in sample_chain
     ]
+
+def transform_sample_chain_to_linear_form(sample_chain, targets = None):
+    """
+    Transforms sample_chain (and targets, if specified) to linear form, returning list of tuples (image-level-id, x0, x1, y0, y1, [target])
+    and image size chain: list of tuples (width, height).
+    :param sample_chain: list of pair (img-size, list of samples);
+    :param targets: either None or corresponding structure with targets
+    :return: list of tuples (image-level-id, x0, x1, y0, y1, [target]) and list of image sizes
+    """
+    num_levels = len(sample_chain)
+    res_samples = [
+        (i, *val) if len(val) > 2 else (i, *val[0], val[1])
+        for i in range(num_levels)
+        for val in (zip(sample_chain[i][1], targets[i]) if targets is not None else sample_chain[i][1])
+    ]
+    res_image_chain = [v for (v,_) in sample_chain]
+    return res_samples, res_image_chain
+
+
+##########################################################################
+##########################################################################
+#### Block for generation of mipmaps                                   ###
+####       main function - generate_image_miplevels                    ###
+##########################################################################
+######## What we have: source image and specified mip-level sizes      ###
+##########################################################################
+######## Parameters: minimal downscale factor                          ###
+##########################################################################
+##########################################################################
+
+
+def generate_optimal_resize_sources(size_chain, minimal_factor):
+    """
+    Generates indices of sizes from where to downsize image. It assumes that size_chain is decreasing list of image-sizes.
+    :param size_chain: list of tuples (width, height)
+    :param minimal_factor: factor for downsize, i.e. use smallest source where source-size > minimal-factor * cur-size
+    :return: list of indices, e.g. [0,0,1,2,2,3]
+    """
+    def calc_minimal_factor(size0, size1):
+        if type(size0) in (tuple, list, np.ndarray):
+            return np.min([a / b for (a,b) in zip(size0, size1)])
+        return size0 / size1
+    
+    res = [0 for x in size_chain] #initialize with first element
+    for i in range(1, len(size_chain)-1):
+        for j in range(i + 1, len(size_chain)):
+            if calc_minimal_factor(size_chain[i], size_chain[j]) >= minimal_factor:
+                res[j] = i
+    return res
+
+def generate_image_miplevels(src_image, size_chain, minimal_factor=1.9):
+    """
+    Generates miplevels from src_image according to size_chain.
+    :param src_image: source image
+    :param size_chain: list of (width, height) - it must be decreasing
+    :param minimal_factor: factor for downsize, i.e. use smallest source where source-size > minimal-factor * cur-size
+    :return: list of images of corresponding size
+    """
+    src_size = (src_image.shape[1], src_image.shape[0])
+    extended_chain = [src_size] + size_chain
+    extended_source = generate_optimal_resize_sources(extended_chain, minimal_factor)
+    res_images = [src_image]
+    for i in range(1, len(extended_chain)):
+        tmp_size = extended_chain[extended_source[i]]
+        res_images.append(cv2.resize(res_images[extended_source[i]], dsize=extended_chain[i], interpolation=cv2.INTER_AREA))
+    return res_images[1:]
+
+##########################################################################
+##########################################################################
+#### Block for extraction of features                                  ###
+####       main function - generate_image_miplevels                    ###
+##########################################################################
+##########################################################################
+##########################################################################
+
+def extract_features_from_samples_and_mipmaps(samples, mipmaps):
+    """
+    Extracts features from images according to sample description. Does not perform any transformation of channels.
+    :param sample: list of (mip-id, x0, x1, y0, y1)
+    :param mipmaps: list of images
+    :return: array of num_samples x sample_rows x sample_cols x channels
+    """
+    return np.array([
+        mipmaps[x[0]][x[3]:x[4],x[1]:x[2]] for x in samples
+    ])
+
+def extract_targets_from_samples(samples):
+    """
+    Extracts targets from sample description.
+    :param sample: list of (mip-id, x0, x1, y0, y1, target)
+    :return: array of num_samples of targets
+    """
+    return np.array([x[5] for x in samples])
+
+def split_sample(sample, pcts):
+    """
+    Splits sample into number of parts according to length of pcts.
+    :param sample: tuple of samples or sample itself
+    :param pcts: shares to which sample should be split
+    :return: tuple of sample-like structures
+    """
+    cumvpct = np.array(pcts)
+    cumvpct = cumvpct / np.sum(cumvpct)
+    cumvpct = np.append(-0.1, np.cumsum(cumvpct))
+    cumvpct[-1] = 1.1 #in order to exclude (1 < 1) situations
+    ranges = [(cumvpct[i], cumvpct[i+1]) for i in range(len(pcts))]
+    if type(sample) is tuple:
+        z = np.random.uniform(size=len(sample[0]))
+        if type(sample[0]) is list:
+            w = np.array(range(len(sample[0])))
+            return tuple(tuple([x[y] for y in w[(z >= a) & (z < b)]] for x in sample) for (a,b) in ranges)
+        else:            
+            return tuple(tuple(x[(z >= a) & (z < b)] for x in sample) for (a,b) in ranges)
+    else:
+        z = np.random.uniform(size=len(sample))
+        if type(sample) is list:
+            w = np.array(range(len(sample)))
+            return tuple([sample[y] for y in w[(z >= a) & (z < b)]] for (a,b) in ranges)
+        else:
+            return tuple(sample[(z >= a) & (z < b)] for (a,b) in ranges)
+        
+def shuffle_batches(sample, batch_size, shuffle=True):
+    """
+    Shuffles sample into parts of batch_size, yielding them one by one
+    :param sample: tuple of samples or sample itself
+    :param batch_size: batch size
+    :return: yields sample-like structures
+    """
+    if type(sample) is tuple: 
+        ids = list(range(len(sample[0])))
+        if shuffle:
+            np.random.shuffle(ids)
+        for i in range(0,len(ids),batch_size):
+            lst = min(len(ids), i + batch_size)
+            if type(sample[0]) is list:
+                yield ([x[z] for z in ids[i:lst]] for x in sample)
+            else:
+                yield (np.array(x[ids[i:lst],]) for x in sample)
+    else:
+        ids = list(range(len(sample)))
+        if shuffle:
+            np.random.shuffle(ids)
+        for i in range(0,len(ids),batch_size):
+            lst = min(len(ids), i + batch_size)
+            if type(sample) is list:
+                yield [sample[z] for z in ids[i:lst]]
+            else:
+                yield np.array(sample[ids[i:lst],])
