@@ -1,0 +1,3 @@
+model_checkpoint_path: "pass_general_v2_03"
+all_model_checkpoint_paths: "pass_general_v2_02"
+all_model_checkpoint_paths: "pass_general_v2_03"

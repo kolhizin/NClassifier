@@ -335,6 +335,12 @@ def calculate_sample_chain_target(sample_chain, regions,
     :param sample_chain: list of tuple of (img_size, list of samples),
                          i.e. like in generate_sample_chain
     :param regions: list of tuple-like of regions (x0, x1, ..., y0, y1)
+    :param relevancy: (scalar, scalar, scalar) => scalar (not nan) - relevency function of arguments
+                sample-area, region-area, overlap-area;
+                default: most-relevant region is with highest absolute overlap
+    :param relevancy_cutoff: cutoff point for relevancy - if does not passes, then None is propagated
+    :param target: (sample, region, img_size, sample_area, region_area, overlap_area) => scalar - target 
+                    function
     :return: list of list of hits (almost same structure as sample_chain)
     """
     return [
