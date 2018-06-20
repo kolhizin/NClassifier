@@ -1,5 +1,6 @@
 import numpy as np
 import cv2
+import pickle
 import os, os.path
 import utils.sampletools as smpl
 
@@ -156,19 +157,17 @@ def generate_batches_from_image_sample(image, sample, size_chain, batch_size,
         else:
             yield features
         
-def generate_batches_from_file(fname, batch_size, img_path=None, shuffle=True, supress_target=False):
+def generate_batches_from_file(fname, batch_size, shuffle=True, supress_target=False):
     """
     Loads image and sample information to generate batches of features and target, which it yields.
-    :param img_path: path to images
     :param fname: name of sample-description
     :param batch_size: number of observations in single batch (less or equal to specified number)
     :param shuffle: if True, will randomly shuffle observations, if False won't mess with the order.
     :param supress_target: if True will not yield targets
     """
-    loc_img_path = img_path if img_path is not None else os.path.split(fname)[0]
     with open(fname, 'rb') as f:
         sample, size_chain, img_fname = pickle.load(f)
-    image = cv2.cvtColor(cv2.imread(os.path.join(img_path,img_fname)), cv2.COLOR_BGR2RGB)
+    image = cv2.cvtColor(cv2.imread(img_fname), cv2.COLOR_BGR2RGB)
     for s in generate_batches_from_image_sample(image, sample, size_chain, batch_size,
                                                 shuffle=shuffle, supress_target=supress_target):
         yield s
@@ -190,13 +189,14 @@ def combine_value_map_2d_1level(samples, values):
     sums = np.zeros(dims)
     cnts = np.zeros(dims)
     
-    for (s,p) in zip(samples, probs):
-        sums[s[0]:s[1],s[2]:s[3]] += values
+        
+    for (s,v) in zip(samples, values):
+        sums[s[0]:s[1],s[2]:s[3]] += v
         cnts[s[0]:s[1],s[2]:s[3]] += 1
         
     return sums / cnts
 
-def combine_value_map_2d(samples, probs):
+def combine_value_map_2d(samples, values):
     """
     Combines 2d value map for all mip-levels, using sample-values.
     :param samples: sample description
@@ -204,8 +204,8 @@ def combine_value_map_2d(samples, probs):
     :returns: all 2d value map
     """
     def select_level(index):
-        ps = [probs[i] for i in range(len(samples)) if samples[i][0]==index]
+        ps = [values[i] for i in range(len(samples)) if samples[i][0]==index]
         return [s[1:] for s in samples if s[0] == index], ps
     min_ind = min([s[0] for s in samples])
     max_ind = max([s[0] for s in samples])
-    return [generate_prediction_map_2d(*select_level(i)) for i in range(min_ind, max_ind+1)]
+    return [combine_value_map_2d_1level(*select_level(i)) for i in range(min_ind, max_ind+1)]
